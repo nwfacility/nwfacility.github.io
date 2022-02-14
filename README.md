@@ -1,2 +1,1 @@
-# nwfacility.github.io
-Neill Wycik Facility Homepage
+# Neill Wycik Facility Homepage
