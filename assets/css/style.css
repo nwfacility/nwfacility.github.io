@@ -21893,3 +21893,22 @@ dl li {
 }
 
 /*# sourceMappingURL=maps/style.css.map */
+
+
+.install span {
+  font-size: 12px
+}
+
+.col-md-3 {
+  margin-top: 27px;
+
+}
+
+.col-md-3 .card .p-3{
+height:150px;
+width: 200px;
+}
+
+.navbar .navbar-menu-wrapper {
+color: black;
+}

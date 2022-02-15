@@ -1,0 +1,1278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Neill-Wycik Steamer</title>
+  <!-- plugins:css -->
+  <!-- <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css"> -->
+  <link href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="../assets/vendors/base/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="../assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <!-- End plugin css for this page -->
+  <!--lightbox-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../assets/images/favicon.png" />
+</head>
+<body class="sidebar-icon-only">
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row" >
+      <div class="navbar-brand-wrapper d-flex justify-content-center">
+        <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">  
+          <a class="navbar-brand brand-logo" href="index.html"><img src="../assets/images/logo.svg" alt="logo"/></a>
+          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="../assets/images/logo-mini.svg" alt="logo"/></a>
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-sort-variant"></span>
+          </button>
+        </div>  
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+          <ul class="navbar-nav mr-lg-4 w-100">
+              <li class="nav-item nav-search d-none d-lg-block w-100">
+                  <h3>Steamer</h3>
+              </li>
+            </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <!--  
+          <button type="button" class="btn btn-light bg-white btn-icon mr-3 mt-2 mt-xl-0">
+                    <i class="mdi mdi-download text-muted"></i>
+                  </button>
+          -->
+          
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#overview">
+              <i class="mdi mdi-home menu-icon"></i>
+              <span class="menu-title">Overview</span>
+            </a>
+          </li>
+
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#manager">
+              <i class="mdi mdi-account menu-icon"></i>
+              <span class="menu-title">Facility Managers</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#safety">
+              <i class="mdi mdi-alert menu-icon"></i>
+              <span class="menu-title">Safety Guidelines</span>
+            </a>
+          </li>
+          <!--
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="mdi mdi-circle-outline menu-icon"></i>
+              <span class="menu-title">With subs</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="#">sub1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#">sub2</a></li>
+              </ul>
+            </div>
+          </li>
+          -->
+          <li class="nav-item">
+            <a class="nav-link" href="#ground-rules">
+              <i class="mdi mdi-view-headline menu-icon"></i>
+              <span class="menu-title">Room Use Rules</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#audio">
+              <i class="mdi mdi-fullscreen"></i>
+              <span class="menu-title">Audio Video System</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#training">
+              <i class="mdi mdi-library-books menu-icon"></i>
+              <span class="menu-title">Training</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#3dprojector-section">
+              <i class="mdi mdi-projector menu-icon"></i>
+              <span class="menu-title">3D Projector</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Screen-section">
+              <i class="mdi mdi-projector-screen menu-icon"></i>
+              <span class="menu-title">Video Screen</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#bluray-section">
+              <i class="mdi mdi-blur-radial menu-icon"></i>
+              <span class="menu-title">Bluray Player</span>
+            </a>
+          </li>
+		  
+		  <li class="nav-item">
+            <a class="nav-link" href="#amplifier-section">
+              <i class="mdi mdi-amplifier menu-icon"></i>
+              <span class="menu-title">Amplifier</span>
+            </a>
+          </li>
+		  
+		  <li class="nav-item">
+            <a class="nav-link" href="#mixer-section">
+              <i class="mdi mdi-headphones menu-icon"></i>
+              <span class="menu-title">Mixer</span>
+            </a>
+          </li>
+		  
+		  <li class="nav-item">
+            <a class="nav-link" href="#lightcontroller-section">
+              <i class="mdi mdi-spotlight menu-icon"></i>
+              <span class="menu-title">Light Controller</span>
+            </a>
+          </li>
+		  
+
+
+          
+          
+         
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+
+        <!-- Notification Start -->
+            <div class="row" id="proBanner">
+                
+                <div class="col-md-12 grid-margin">
+                    
+                  <div class="card bg-gradient-primary border-0">
+                    <button id="bannerClose" class="btn border-0 p-0" style="text-align: right;margin: 5px;">
+                        <i class="mdi mdi-close text-white"></i>
+                      </button>
+                    <div class="card-body py-3 px-4 d-flex align-items-center justify-content-between flex-wrap">
+                
+                      <p class="mb-0 text-white font-weight-medium" style="padding-bottom: 10px;"><span style="font-size:26px;">Important Notes</span>
+                        <br/>
+                        <br/>To use the facility you have to complete the following steps:<br/>
+                        <b>(1)</b> Study the materials and take the quiz with satisfactory results - <mark class="bg-warning text-white">Do NOT book for orientation before completing the quiz. Otherwise, we ask you to return another day for orientation</mark><br/>
+                        <b>(2)</b> Book an appointment for orientation session <br>
+                        <b>(3)</b> You are responsible to learn how to use the devices in the facility. The facility managers are <b>NOT responsible</b> for training or adjusting a device (e.g. turning on the Audio Video System) for your use. If you are not sure how to use or adjust a device, please do not use it before carefully studying the manuals and watching the videos.
+                    </p>
+                      <br>
+      
+                      <div class="d-flex">
+                      
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfMqDZM_bZhtfzvR7maUxyfA6CSahINbXNClSTkTetONiKhtg/viewform?vc=0&c=0&w=1" target="_blank" class="btn btn-outline-light mr-2">Take the Quiz</a>
+                        <a href="https://doodle.com/poll/ihbgs44kx3e2r5hp" target="_blank" class="btn btn-outline-light mr-2 bg-gradient-danger border-0">Book Orientation Session</a>
+                        
+                      </div>
+                      
+                    </div>
+                    <div id="overview" ></div>
+                  </div>
+                </div>              </div>
+          <!-- Notification End -->
+          <div class="row">
+              <div class="col-md-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body dashboard-tabs p-0">
+                    <ul class="nav nav-tabs px-4" role="tablist">
+                      
+                      <li class="nav-item">
+                        <a class="nav-link active" id="sales-tab" data-toggle="tab" href="#sales" role="tab" aria-controls="sales" aria-selected="true">3D Projector</a>
+                      </li>					  
+                      <li class="nav-item">
+                        <a class="nav-link" id="sales-tab" data-toggle="tab" href="#sales2" role="tab" aria-controls="sales2" aria-selected="false">Video Screen</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="purchases-tab" data-toggle="tab" href="#purchases" role="tab" aria-controls="purchases" aria-selected="false">Blurray</a>
+                      </li>					  
+                    </ul>
+                    <div class="tab-content py-0 px-0">
+
+                      <div class="tab-pane fade" id="sales" role="tabpanel" aria-labelledby="sales-tab">
+                        <div class="d-flex flex-wrap justify-content-xl-between">
+                          
+                          <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-information mr-3 icon-lg text-success"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Brand</small>
+                              <small class="mb-1 text-muted"> <a href="https://www.youtube.com/watch?v=4JL0ZzCEisU" data-toggle="lightbox" data-width="1280"><i midi midi-video menu-icon></i>VPL-VW90ES Projector Overview</a> </small>							   
+                              <h5 class="mr-2 mb-0"><a href="#3dprojector-section">Rules and more information</a></h5>
+                            </div>
+                          </div>
+                          <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-video icon-lg mr-3 text-danger"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Video Tutorials</small>
+                              <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle p-0 bg-transparent border-0 text-dark shadow-none font-weight-medium" href="#" role="button" id="dropdownMenuLinkA" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <h5 class="mb-0 d-inline-block">Watch here</h5>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkA">
+                                  <a class="dropdown-item" href="https://www.youtube.com/watch?v=BHj_j5Pm-U0" data-toggle="lightbox" data-width="1280"><i mdi mdi-video menu-icon></i>Understanding Our Projector</a>
+                                  <a class="dropdown-item" href="https://www.youtube.com/watch?v=4JL0ZzCEisU" data-toggle="lightbox" data-width="1280"><i mdi mdi-video menu-icon></i>Getting Started</a>                                 
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-download mr-3 icon-lg text-primary"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Downloads</small>
+                              <small class="mb-1 text-muted"> <a href="../assets/manuals/projectorspecVPLW90ES.pdf" target="_blank" download="projectorspecVPLW90ES.pdf">Specifications</a> </small>
+
+                              <h5 class="mr-2 mb-0"> <a href="../assets/manuals/(OperatingInstructions)VPLW90ES.pdf" target="_blank" download="(OperatingInstructions)VPLW90ES.pdf">Manuals</a></h5> 
+                                            
+                            </div>
+                          </div>             
+                          
+                          <div class="d-flex py-3 border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-flag mr-3 icon-lg text-warning"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Email: steamer@neill-wycik.ca</small>
+                              <h5 class="mr-2 mb-0">
+                                <a href="mailto:steamer@neill-wycik.ca?Subject=3D%20Projector%20problem" target="_top">Report a problem</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                       
+					   
+                     <div class="tab-pane fade" id="sales2" role="tabpanel" aria-labelledby="sales2-tab">
+                        <div class="d-flex flex-wrap justify-content-xl-between">
+                          <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-calendar-heart icon-lg mr-3 text-primary"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Updates coming soon!</small>
+                              <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle p-0 bg-transparent border-0 text-dark shadow-none font-weight-medium" href="#" role="button" id="dropdownMenuLinkA" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <h5 class="mb-0 d-inline-block">Updates coming soon!</h5>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkA">
+                                  <a class="dropdown-item" href="#" data-toggle="lightbox" data-width="1280"><i mdi mdi-video></i> Updates coming soon!</a>
+                                  <a class="dropdown-item" href="#">Updates coming soon!</a>
+                                  <a class="dropdown-item" href="#">Updates coming soon!</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-download mr-3 icon-lg text-warning"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Updates coming soon!</small>
+                              <h5 class="mr-2 mb-0">Updates coming soon!</h5>
+                            </div>
+                          </div>
+                          <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-eye mr-3 icon-lg text-success"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Updates coming soon!</small>
+                              <h5 class="mr-2 mb-0">Updates coming soon!</h5>
+                            </div>
+                          </div>
+                          
+                          <div class="d-flex py-3 border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-flag mr-3 icon-lg text-danger"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Updates coming soon!</small>
+                              <h5 class="mr-2 mb-0">Updates coming soon!</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="tab-pane fade" id="purchases" role="tabpanel" aria-labelledby="purchases-tab">
+                        <div class="d-flex flex-wrap justify-content-xl-between">
+                          <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-calendar-heart icon-lg mr-3 text-primary"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Updates coming soon!</small>
+                              <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle p-0 bg-transparent border-0 text-dark shadow-none font-weight-medium" href="#" role="button" id="dropdownMenuLinkA" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <h5 class="mb-0 d-inline-block">Updates coming soon!</h5>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkA">
+                                  <a class="dropdown-item" href="#">Updates coming soon!</a>
+                                  <a class="dropdown-item" href="#">Updates coming soon!</a>
+                                  <a class="dropdown-item" href="#">Updates coming soon!</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-eye mr-3 icon-lg text-success"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Updates coming soon!</small>
+                              <h5 class="mr-2 mb-0">Updates coming soon!</h5>
+                            </div>
+                          </div>
+                          <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-download mr-3 icon-lg text-warning"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Updates coming soon!</small>
+                              <h5 class="mr-2 mb-0">Updates coming soon!</h5>
+                            </div>
+                          </div>
+                          <div class="d-flex py-3 border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-flag mr-3 icon-lg text-danger"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Updates coming soon!</small>
+                              <h5 class="mr-2 mb-0">Updates coming soon!</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <!-- Overview Start -->
+          <div class="mr-md mr-xl">
+              <div class="row">
+                  <div class="col-md-12 grid-margin stretch-card">
+                      <div class="card">
+                          <div class="card-body">
+                              <h2>
+                                  <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                                  Overview
+                              </h2>
+                          <p class="mb-12">The Neill-Wycik Steamer is a space that allow members of the co-op to host events sponsored by SAC or that they themselves sponsor and use the A/V System or for personal use, or for use with a SAC sponsored event. Due to the nature of the space and components inside the space, both in terms of cost and safety, it is necessary to lay out the ground rules for usage of the space to ensure. proper training of students who wish to use the space and minimize the risk of injuries and property damage as a result. <br>We support a cooperatve culture where:</p>
+                          
+                            <ul>
+                                <li>Everyone has <mark class="bg-warning text-white">responsibility for learning the right way of using devices</mark></li>
+                                <li>Everyone shares <mark class="bg-warning text-white">responsibility for safety</mark></li>
+                                <li>We <mark class="bg-warning text-white">support one another</mark> and are receptive to feedback.</li>
+                                <li>Cooperation is encouraged</li>
+                                <li>Positive experiences are created</li>
+                           </ul>
+
+                          <p class="mb-12">
+                          This is a space to have FUN, LEARN, be CREATIVE, and play SAFELY. Please adhere to posted safety and equipment guidelines, report damaged or unclean equipment, and ask questions.
+                          </p>
+                          <div class="row justify-content-center">
+                              <div class="col-md-12">
+                                  <div class="row">
+                                      <a href="../assets/images/general/01.jpg" data-toggle="lightbox" data-gallery="Steamer" data-title="Bar Area"class="col-3">
+                                        <img src="../assets/images/general/01.jpg" class="img-fluid">
+                                      </a>					  
+                                      <a href="../assets/images/general/02.jpg" data-toggle="lightbox" data-gallery="Steamer" data-title="Lighting Display" class="col-3">
+                                          <img src="../assets/images/general/02.jpg" class="img-fluid">
+                                      </a>
+                                      <a href="../assets/images/general/03.jpg" data-toggle="lightbox" data-gallery="Steamer" data-title="Theatre Screen" class="col-3">
+                                          <img src="../assets/images/general/03.jpg" class="img-fluid">
+                                      </a>
+                                      <a href="https://youtu.be/ofqrSuepieI" data-toggle="lightbox" data-gallery="Steamer" lass="col-3">
+                                        <img src="../assets/images/icons/youtube.png" class="img-fluid">
+                                      </a>
+                                  </div>
+                                  <br>
+                              </div>
+                          </div>
+                          <div id="manager" ></div>
+                          
+                        </div>
+                          
+                    </div>
+                  </div>
+              </div>
+              
+          </div>
+          <!-- Overview End -->
+
+                     <!-- Manager Start -->
+                     <div class="mr-md mr-xl">
+                      <div  class="row">
+                          <div class="col-md-12 grid-margin stretch-card">
+                              <div class="card">
+                                  <div class="card-body">
+                                    <h2>
+                                      <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                                      Facility Manager and Assistant
+                                    </h2>
+                                    <br>
+                                    <p class="mb-12">
+                                      To contact the facility manager or assistant please use <b>steamer@neill-wycik.ca</b>
+                                      <ul>
+                                        <li>Facility Manager: <a href="" target="_blank"> Eugene </a></li>
+                                        <li>Facility Assistant: <a href="" target="_blank">Coming Soon </a> </li>
+                                      </ul>
+                                    </p>
+                                    
+                                      <div class="row">
+                                        <a href="../assets/images/manager/01.jpg" data-toggle="lightbox" data-gallery="managers" data-title="Facility Manager: Eugene " class="col-3">
+                                          <img src="../assets/images/manager/01.jpg" class="img-fluid">
+                                        </a>                                        
+                                     </div>
+                                     <br/>
+          
+                                      <div id="safety" ></div>
+                                  </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <!-- Manager End -->
+
+          <!-- Safety Start -->
+          <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Safety Guidelines
+                          </h2>
+                          <br>
+                          <h3>Report all Injuries/Incidents</h3>
+                            <ul>
+                              <li>Immediately report ALL accidents, injuries, or incidents to <b>security at front desk</b>.</li>
+                              <li>Immediately discontinue use of the equipment if it becomes unsafe, damaged, or is not working properly.</li>
+                              <li>Notify a Steamer Manager or Assistant Manager.</li>
+                            </ul>
+
+                         <h3>Safe Conduct Agreement</h3>
+                         <ul>
+                           <li>Use the space and equipment safely and leave the space and equipment in clean and working condition.</li>
+                           <li>Do not use a device if you are not sure how to use it.</li>
+                           <li>Operation of the 3D Projector is restricted. Please note the manual.</li>
+                           <li>Abide by SAC, safety, and fire regulations and comply with the rules and regulations of the equipment, whether posted or otherwise imposed by SAC.</li>
+                         </ul>
+
+                         <h3>Prepare</h3>
+                         <ul>
+                           <li>Safety is your top priority when using the Steamer. If you are not sure what to do, ask.</li>
+                           <li>Be aware of locations of first aid, and safety equipment.</li>
+                           <li>Never use any equipment unless you’ve been trained to use it safely.</li>
+                           <li>Use a step stool to reach extension cords or items which are out of reach. Do not climb on tables or chairs to reach for something.</li>                           
+                           <li>Do not cause a distraction, fool around, or startle anyone while either one of you is using a tool.</li>                           
+                         </ul>
+                         
+                         <h3>Use Equipment Correctly</h3>
+                           <ul>
+                             <li>Use all equipment how they are designed to be used.</li>
+                             <li>Never attempt to use broken or faulty equipment or components. Report any broken equipment or components to a Steamer Facility Manager or Aiisitant immediately.</li>
+                             <li>Do not remove tools or equipment from the Steamer.</li>
+                             <li>Never walk away from any equipment that is still on.</li>
+                             <li>Never tamper with any equipment settings or features. Operate the Audio System according to recommended procedures and with the cabinet doors open.</li>
+                           </ul>
+                          
+                          <h3>Food and Drinks</h3>
+                          <ul>
+                            <li><mark class="bg-warning text-white">Glass containers are NOT permitted.</mark></li>
+                            <li>Drink and food are permitted. Also, you are responsible for cleaning up after yorself and not leaving the space in an untidy state.</mark></li>
+			    <li>Alcohol <b>is permitted</b> in this space.</li>
+                          </ul>
+
+                          <h3>First Aid Equipment</h3>
+                          <ul>
+                            <li>
+                              There is a first aid equipment kit located at the Main Entrance to the Steamer and also at the Bar Area.
+                            </li>
+                          </ul>
+                          <br>
+                          <div class="row justify-content-center">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <a href="../assets/images/safety/01.jpg" data-toggle="lightbox" data-gallery="safety" data-title="First Aid Station Main Entrance" class="col-3">
+                                      <img src="../assets/images/safety/01.jpg" class="img-fluid">
+                                    </a>
+                                    <a href="../assets/images/safety/02.jpg" data-toggle="lightbox" data-gallery="safety" data-title="First Aid Station Bar Location" class="col-3">
+                                        <img src="../assets/images/safety/02.jpg" class="img-fluid">
+                                    </a>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                        
+                        <div id="training" ></div>
+
+                        </div>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+          <!-- Safety End -->
+
+           <!-- Training Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Training
+                          </h2>
+                          <br>
+                          <p class="mb-12">Before any member can utilize the space, there will be a requirement for them to undergo an orientation session with either the manager of the space or either of the assistant managers. This training will include, but not be limited to:</p>
+                            <ul>
+                              <li>The locations and proper usage of the Emergency Supplies (First Aid Kits and Eyewash Station) inside of the space.</li>
+                              <li>An overview of the procedural rules of the space (including occupancy limits for the space, cleaning requirements of the space, sign in procedures, guest policy, etc ... )</li>
+                              <li>Training on the usage of the various equipment available inside of the space, particularly the 3D Projector, Light Controller and Audio/Video System, and:</li>
+                              <li>A practical test of said training in the form of a basic walkthrough of how the eqipment operates (preceeded by the completion of the online quiz linked above on this site).</li>
+                            </ul>
+              
+                            <div id="ground-rules" ></div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+          <!-- Training End -->
+
+          <!-- Rules Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Ground Rules for the Steamer
+                          </h2>
+                          <br>
+                          <p class="mb-12">The ground rules for the Steamer shall be as follows. Violation of any of the rules of the space will lead to loss of usage privileges:</p>
+                            <ul>
+                              <li>The occupancy limit of the Steamer at any given time shall be llmited to 76 persons.</li>
+                              <li>No untrained members or guests are allowed to operate any equipment in  the Steamer under any circumstances.</li>
+                              <li>No glass is allowed in the Steamer under any circumstances.</li>
+                              <li>All users of the space must both sign into the space when they enter and sign out of the space when they leave.</li>
+                              <li>All users must sign out the key set from security.</li>
+                              <li>All users must book the steamer to reserve useage.</li>
+							  <li>All users wishing to cancel a booking must do so 60 mins prior to their reservation at the Security Desk. Failure will result in the loss of privilidge to the Steamer for one week.</li>
+							  <li>All users must remove the Garbage and Recycling to the respective Recycling Area in the Garage and garbage to the Garbage Area in the Garage.</li>
+							  <li>All users must leave the room in a clean state. Users are responsible for bleaning up after themselves. Please practise common courtesy towards your fellow members.</li>
+							  <li>All users must ensure the audio and video equiptment is powered down before they discontinue use of the space.</li>
+                              <li>Any and all damages or emergencies must immediately be reported to both security and the Facility Manager/Assistants.</li>
+                            </ul>
+              
+                            <div id="project-storage" ></div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+          <!-- Rules End -->
+
+           <!-- Storage Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Personal Storage
+                          </h2>
+                          <br>
+                          <p class="mb-12">
+                            Storage of any personal items in the Steamer is not permtted. SAC does not in any conceivable way wish to take responsibility for the safe storage of your personal items.
+                            <!--
+                            Members or Users are not allowed to store any items in the space at all. Exception being for persons who have been approved to host a steamer party. Even then all items must be removed no more than <b>24 hours<b> after said party has been held. 
+                            -->
+                          </p>
+                            <div id="3dprojector-section" ></div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+          <!-- Storage End -->
+
+           <!-- 3D projector Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            3D Projector Rules
+                          </h2>
+                          <br>
+                          
+                          <div class="row justify-content-center">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <a href="../assets/images/3dprojector/01.jpg" data-toggle="lightbox" data-gallery="3dprojector-section" data-title="Front Full Global View Close Up" class="col-3">
+                                      <img src="../assets/images/3dprojector/01.jpg" class="img-fluid">
+                                    </a>
+                                    <a href="../assets/images/3dprojector/02.jpg" data-toggle="lightbox" data-gallery="3dprojector-section" data-title="Side Connections View Close Up" class="col-3">
+                                        <img src="../assets/images/3dprojector/02.jpg" class="img-fluid">                                    </a>                        
+                                       </a>                                  
+                                    <a href="../assets/images/3dprojector/04.jpg" data-toggle="lightbox" data-gallery="3dprojector-section" data-title="Front Vent Closeup" class="col-3">
+                                      <img src="../assets/images/3dprojector/04.jpg" class="img-fluid">
+                                   </a>
+                                </div>
+                                <br>
+                            </div>
+                         </div>
+
+                          <p class="mb-12">
+                            3D projector is available for watching movies, on our Bluray player or with an application like Youtube or Netflix. You may also hook up your own laptop and use the projector for working on presentations for class. The following rules must be adhered to for the benefit of all member users :
+                          </p>
+                          <ul>                            
+                            <li>
+                              <mark class="bg-warning text-white">All 3D projector settings, calibration and alignment of the projector is never to be altered by members prior to or during use.</mark>
+                            </li>
+                            <li>
+                              <mark class="bg-warning text-white">The 3D projector is never to be left on after member use and it is the responsibility of the member user to ensure the projector is properly powered down after each use. Bulbs for the projector are expensive and premature replacement due to misuse is deemed by SAC as an unnecessary expense.</mark>
+                            </li>
+                            <li>
+                              Any instance of instance of a fault with the 3D projector  must immediately be reported to both security and facility manager.
+                            </li>
+                            <li>
+                              Steamer 3D projector may be used only for lawful purposes and Neill-Wycik Steamer reserves the right to refuse any member who uses the projector to display anything pronographic, lewd, or unlawful from continued use of the Steamer Facility. The 3D projector cannot be used to display content material that is:
+                              <ul>
+                                <li>
+                                  Prohibited by provincial or federal law.
+                                </li>                                                                                             
+                                <li>
+                                  In violation of the intellectual property rights of others. For example, reproducing                                                              
+                                  material that is subject to copyright, patent, or trademark protection.
+                                </li>
+                                <li>                               
+                                  Lewd, malicious, or otherwise unsuitable for creating a welcoming and inclusive public space.
+                                </li>
+
+                              </ul>
+                            </li>
+                          </ul>
+                          <h3>
+                            <a href="#3dprojector-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            What is important to know about our 3D projector?
+                          </h3>
+                                
+                          <p class="mb-12">
+                                It offers a choice of Normal, Full, Wide Zoom, Zoom, and Anamorphic Zoom. The other setting on the Screen menu is Overscan. 
+								The Sony offers only Overscan off and on options, and no masking alternative (as it maintains 1:1 pixel mapping).
+							<li>  
+							<mark class="bg-warning text-white">The projector presents the best quality image when this setting is left on normal.</mark>
+							</li>
+                          </p>
+                          
+                          <h3>
+                            <a href="#3dprojector-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Where do I start?
+                          </h3>
+                                
+                          <p class="mb-12">
+                                If you are new to using our 3D projector and wish to learn the basics, start with this youtube video. <a href=https://youtu.be/njxxC-LzpJY" data-toggle="lightbox" data-gallery="Steamer" target="blank">Promotional Video </a> </li>  It has easy ot use, but requires a warm up time for the lamp of 5 minutes from power on.
+
+                                How do I use the 3D projector?                                                                                      <!--https://www.youtube.com/watch?v=njxxC-LzpJY -->                                             
+
+                                You will be required to complete a one-time mandatory 3D Projector orientation and sign a Steamer User Agreement. Once you have passed the training with 100% and completed the User Agreement you can use thre 3D projector if any problems arise you can contact the Steamer Manager or Assistant Manager (Email).
+                                <h3>
+                                  <a href="#3dpojector-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                                What can I project?
+                                </h3>
+                                <p class="mb-12">
+                                While the possibilities may seem endless, there are some limitations with the projector. Since it is not a 4K projector it cannot project 4K content. While you can display video from your computer desktop, you will have to be familiar with how to resize your desktop image so icons are clearly visible.
+                                The Steamer equipment may be used only for lawful purposes. Equipment cannot be used to display or project previously-mentioned content.
+                              </p>
+                              <h3>
+                                <a href="#3dprojector-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                              How big is the projected image? 
+                              </h3>
+                              
+							  <p class="mb-12">
+                                While it is dependant on the distance back from the screen and how big the screen is, the current set up will project an image size of 110 inches wide by 69.4 inches high (279.4 cm high by 175.5 cm high).
+                              </p>
+                              <h3><a href="#3dprojector-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                                How many people can comfortably view the projected image?
+                              </h3>
+                              <p class="mb-12">
+                                It depends first on the occupancy capacity of the Steamer which is 75 people, however a range of between 9.5 feet (3.3m) closest to 20 feet (6.09m) farthest gives an ideal range.We can easily accomodate between 15 and 40 people and provide a comfortable viewing experience. 
+								Things to remember:								
+                              </p>
+                              <ul>
+                                <li>Popcorn or other snacks.</li> 
+                                <li>Seating (red vinyl chairs and beige theatre chairs are for your use in the Steamer).</li>
+                                <li>Put the screen up when you are done.</li>
+                                <li>Power off the 3D projector when you are done.</li>
+                                <li>Clean up your garbage and recycling when you are done watching your movie.</li>
+                                <li>Stack the red chairs up against the wall when you are done.</li>
+                                <li>If you have less than 10 people in the Steamer you can have alcohol.</li>
+								<li>If you have 10 or more people present Security must be paid to attend your event for you to have alcohol.</li>
+                              </ul>                              
+                              <h3><a href="#3dprojector-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a>                                
+                                <div class="row justify-content-center">
+                                  <div class="col-md-12">
+                                      <div class="row">
+                                          <a href="../assets/images/3dprojector/04.jpg" data-toggle="lightbox" data-gallery="3dprojector-section" data-title="Closeup View Of Front Venting" class="col-3">
+                                            <img src="../assets/images/3dprojector/04.jpg" class="img-fluid">
+                                         </a>
+                                      </div>
+                                      <br>
+                                  </div>
+                               </div>
+
+                            <div id="Screen-section" ></div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+          <!-- 3D projector End -->
+
+
+           <!-- Screen Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+						<h2>                                                       
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Video Screen
+                          </h2>
+                          <br>   
+						  
+                            <div class="row">
+                              <a href="../assets/images/screen/01.jpg" data-toggle="lightbox" data-gallery="screen-station" data-title="" class="col-3">
+                                <img src="../assets/images/screen/01.jpg" class="img-fluid">
+                              </a>
+                                                           
+                            <a href="https://youtu.be/qeoGfYtySjw" data-toggle="lightbox" data-gallery="screen-station" class="col-3">
+                              <img src="../assets/images/icons/youtube.png" class="img-fluid">
+                            </a>
+                           </div>
+                           <br/>
+                          <h3><a href="#screen-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            DA-Lite 120 inch Motorized Screen
+                          </h3>
+						  <br>
+                          <ul>                            
+                            <li><a href="https://nwsteamer.github.io/manuals/DA-Lite_Video_Screen_Drawing.pdf" target="_blank" download=DA-Lite_Video_Screen_Drawing.pdf>Manual</a></li>
+			    <li> <a href="https://www.youtube.com/watch?v=qeoGfYtySjw" data-toggle="lightbox" data-gallery="screen-station">Cleaning Proceedure</a></li>                                                     
+                          </ul> 
+                         						  
+						  
+						  <h3><a href="#screen-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a>
+						   Video Screen Rules
+                          </h3>						  						  
+                          
+						  <p class="mb-12">
+                            Video Screen is available for watching movies, on our Bluray player or with an application like Youtube or Netflix. You may also hook up your own laptop and use the projector for working on presentations for class. The following rules must be adhered to for the benefit of all member users :
+                          </p>
+                          <ul>                            
+                            <li>
+                              <mark class="bg-warning text-white">Always retract ( roll up ) the video screen when you are done using the A/V system.</mark>
+                            </li>
+                            <li>
+                              <mark class="bg-warning text-white">Never attempt tp clean the Video Screen on your own under any circumstances.</mark>
+                            </li>
+                            <li>
+                              Any instance of instance of a fault with the Video Screen  must immediately be reported to both security and facility manager.
+                            </li>
+                            <li>
+                              Steamer Video Screen may be used only for lawful purposes and Neill-Wycik Steamer reserves the right to refuse any member who uses the Video Screen to display anything pronographic, lewd, or unlawful from continued use of the Steamer Facility. The Video Screen cannot be used to display content material that is:
+                              <ul>
+                                <li>
+                                  Prohibited by provincial or federal law.
+                                </li>                                                                                             
+                                <li>
+                                  In violation of the intellectual property rights of others. For example, reproducing                                                              
+                                  material that is subject to copyright, patent, or trademark protection.
+                                </li>
+                                <li>                               
+                                  Lewd, malicious, or otherwise unsuitable for creating a welcoming and inclusive public space.
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+						  
+                          <h3><a href="#screen-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            What is important to know about our Video Screen?
+                          </h3>
+                                
+                          <p class="mb-12">
+                                It is a motorized screen which can be lowered by a switch inside the DJ Booth. The screen is triggered by 120 Volts of electricity by toggeling a the light switch inside the lower cabinet of the DJ Booth.							
+                                <li>Our screen is manually trigged and does not drop when a video source it turned on</li> 
+                                <li>Our screen can be cleaned with simple cleaning materials</li>
+                                <li>Our screen has good off angel viewing</li>
+                                <li>Our size is ideal for HDTV, and all other 16:9 video content</li>
+                                <li>You have to manually retract the screen when you are done using it before leaving the Steamer</li>
+                                <li>The projector has been calibrated to completely fill the screen under almost every viewing situation</li>							
+                              </ul> 	
+							<li>  
+							<mark class="bg-warning text-white">Our screen must never be cleaned with harsh chemicals or highly concentrated detergent.</mark>
+							</li>
+                          </p>
+						  
+                            <div id="bluray-section" ></div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <!-- Screen End -->
+
+           <!-- Bluray Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Bluray Player
+                          </h2>
+                          <br>
+                          <h3>
+                            <a href="#bluray-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            What is important to know about our Bluray Player?
+                          </h3>
+                                
+                          <p class="mb-12">
+                                It plays virtually all formats of DVD, CD, and Bluray Discs. Also, it is a full 1080P machine with proper upscaling of DVD sources.
+								The audio section on this player is completely isolated from the video section and therefore produced some of the highest quality results of any machine under $1,000.00 that is avaliable today.
+							<ul>
+                                <li>BD-Live Compliant with 1GB Internal Memory and USB Expansion with HDD Support</li> 
+                                <li>PQLS for Jitter-Free 2-Channel and Multi-Channel Playback</li>
+                                <li>48-Bit Deep Color</li>
+                                <li>7.1-Channel Analog Outputs</li>
+                                <li>Audiophile Capacitors</li>
+                                <li>SRS-232C Port</li>
+				<li>The USB 2.0 port on the rear of the machine supports up to two tera bites of external HDD stored information</li>
+                                <li>Easily understood front panel controls. This allows the user to do all basic start up functions without the needed use of the remote control</li>
+				<li>Remote Control is backlit for easy navigation in poor lighting situations</li>
+                              </ul> 	
+				  <li>  
+				 <mark class="bg-warning text-white">The bluray player seetings are optimized for the current set up, and are not to be tampered with.</mark>
+				  </li>
+                          </p>
+                            <div class="row">
+                              <a href="../assets/images/bluray/01.jpg" data-toggle="lightbox" data-gallery="bluray-station" data-title="" class="col-3">
+                                <img src="../assets/images/bluray/01.jpg" class="img-fluid">
+				</a>	
+			       <a href="../assets/images/bluray/06.jpg" data-toggle="lightbox" data-gallery="bluray-station" data-title="" class="col-3">
+                                <img src="../assets/images/bluray/06.jpg" class="img-fluid">
+                                </a>
+			      <a href="https://www.youtube.com/watch?v=s2fTZ09qNJQ" data-toggle="lightbox" data-gallery="bluray-station" class="col-3">
+                                <img src="../assets/images/icons/youtube.png" class="img-fluid">
+                                </a>
+				<br>	
+			     <ul> <a href="../assets/manuals/BDP-23FD_manual.pdf" target="_blank" download=BDP-23FD_manual.pdf data-gallery="bluray-station" class="col-3">
+                                <img src="../assets/images/icons/manual.png" class="img-fluid">
+                              </a>
+			      <a href="../assets/manuals/BDP-23FD.pdf" target="_blank" download= BDP-23FD.pdf" data-gallery="bluray-station" class="col-3">
+                                <img src="../assets/images/icons/specifications.png" class="img-fluid">
+					</a> </ul>		
+                           </div>
+                           <br/>
+                          
+                            <div id="amplifier-section" ></div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <!-- Bluray End -->
+		  
+		  <!-- Amplifier Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Power Amplifier Crest Model CA9
+                          </h2>
+                          <br>
+                          <h3>
+                            <a href="#amplifier-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            What is important to know about our amplifier?
+                          </h3>
+						  
+						  <p class="mb-12">
+                                It has twin tunnel cooling with back-to-front air flow. These vents must never be covered while the amp is in operation to ensure it never overheats.								
+							<ul>
+                                <li>Front venting is achieved by dual, variable speed DC fans</li> 
+                                <li>Input connectors: Balanced XLR and 1/4-inch (TRS)</li>
+                                <li>In-built protection circuitry</li>
+                                <li>Output Connectors: 5-way binding post or Bananna Connectors</li>
+                                <li>Massive, extruded aluminium heat sinks</li>
+                                <li>Stereo/parallel/bridged mono mode selector switch</li>
+				<li>Frequency Response: 20Hz-20kHz (+0/-0.3dB, 1W/8 ohms),-3dB @ 135kHz.(relatively low distorton)</li>
+                                <li>Latest generation of high-speed, wide-bandwidth output devices</li>
+				<li>Massive, extruded aluminium heat sinks</li>
+				<li>Crest Audio´s legendary "overbuilt" power supply toroidal power transformer</li>
+                              </ul> 	
+							<li>  
+							<mark class="bg-warning text-white">The amplifier must never be left on with the cabinet doors closed. Ensuring this will prevent unnecessary overheating which will damage the amplifier.</mark>
+							</li>
+                          </p>
+                            <div class="row">
+                              <a href="../assets/images/amp/01.jpg" data-toggle="lightbox" data-gallery="amplifier-station" data-title="" class="col-3">
+                                <img src="../assets/images/amp/01.jpg" class="img-fluid">
+                              </a>
+                            <a href="../assets/images/amp/02.jpg" data-toggle="lightbox" data-gallery="amplifier-station" data-title="" class="col-3">
+                                <img src="../assets/images/amp/02.jpg" class="img-fluid">
+                            </a>
+			     <a href="../assets/images/amp/03.jpg" data-toggle="lightbox" data-gallery="amplifier-station" data-title="" class="col-3">
+                                <img src="../assets/images/amp/03.jpg" class="img-fluid">
+                            </a>
+			     <a href="../assets/images/amp/05.jpg" data-toggle="lightbox" data-gallery="amplifier-station" data-title="" class="col-3">
+                                <img src="../assets/images/amp/05.jpg" class="img-fluid">					
+                             </a>			    						      
+			      <ul> <a href="../assets/manuals/CA9manual.pdf" target="_blank" download=CA9manual.pdf data-gallery="amplifier-station" class="col-3">
+                                <img src="../assets/images/icons/manual.png" class="img-fluid">
+                              </a>
+			     <a href="../assets/manuals/ca9.pdf" target="_blank" download=ca9.pdf data-gallery="amplifier-station" class="col-3">
+                                <img src="../assets/images/icons/specifications.png" class="img-fluid">
+			     </a> </ul>		
+                           </div>
+                           <br/>
+                          
+                            <div id="mixer-section"></div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <!-- Amplifier End -->
+		  
+		  <!-- Mixer Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Mixing Panel Allen and Heath XONE42
+                          </h2>
+                          <br>                           
+                          <h3>
+                            <a href="#mixer-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            What is important to know about our audio mixing panel?
+                          </h3>
+						  
+						  <p class="mb-12">
+                                It is the connection point for all audio signals for the Audio Video System.
+								Here are some important features of the Mixer:
+							<ul>
+                                <li>Every input (slider) is clearly labeled to indicate what sound it controls</li> 
+                                <li>4 dual stereo channels (2 phono/line, 2 line/line)</li>
+                                <li>3 band EQ +6dB to total kill</li>
+                                <li>Rotary X-FX control for routing to external FX</li>
+                                <li>VCF filter with resonance & frequency controls</li>
+                                <li>VCA Crossfader with curve control</li>
+								<li>Mix ouputs on balanced XLR</li>
+                                <li>9 segment channel meters</li>
+								<li>Illuminated lightpipes showing status of performance controls</li>
+								<li>USB port with one stereo up to PC and one stereo back</li>
+								<li>Independent booth output</li>
+								<li>XLR microphone input with 2-band EQ and level control</li>
+								<li>1 headphone output (1/4”)</li>
+                              </ul> 	
+							<li>  
+							<mark class="bg-warning text-white">The Audio Mixer must never be left on when you are done and ready to leave the Steamer. Always remember to turn the power on to the mixer first before the amplifier to avoid a loud burst of sound from the speakers.</mark>
+							</li>
+                          </p>
+                            <div class="row">
+                              <a href="../assets/images/mixer/02.jpg" data-toggle="lightbox" data-gallery="mixer-station" data-title=" Rear Panel Close Up View" class="col-3">
+                                <img src="../assets/images/mixer/02.jpg" class="img-fluid">
+                              </a>
+                            <a href="../assets/images/mixer/04.jpg" data-toggle="lightbox" data-gallery="mixer-station" data-title=" Front Panel Global View" class="col-3">
+                                <img src="../assets/images/mixer/04.jpg" class="img-fluid">
+                            <a href="https://www.youtube.com/watch?v=r9JrcwFo-iw" data-toggle="lightbox" data-gallery="mixer-station" class="col-3">
+                              <img src="../assets/images/icons/youtube.png" class="img-fluid">
+                            </a>
+		            <br>		    
+			    <p>							   
+			    <ul>							   
+			    <a href="../assets/manuals/xone_audio_mixer_user_guidel-english_for_print.pdf" target="_blank" download= xone_audio_mixer_user_guidel-english_for_print.pdf data-gallery="mixer-station" class="col-3">
+                                <img src="../assets/images/icons/manual.png" class="img-fluid">
+                              </a>
+			    <a href="../assets/manuals/XONE42_audiomixer_xone.pdf" target="_blank" download= XONE42_audiomixer_xone.pdf data-gallery="mixer-station" class="col-3">
+                                <img src="../assets/images/icons/specifications.png" class="img-fluid">
+			   </a>	 
+			   </ul></p>								    
+                           <br/>
+                          
+                            <div id="lightcontroller-section"></div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <!-- Mixer End -->
+		  
+		  <!-- Lightcontroller Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Pulsar Zero 2000 Light Controller
+                          </h2>
+                          <br>
+                          <h3>
+                            <a href="#lightcontroller-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            What is important to know about our Light Controller?
+                          </h3>
+						  
+						  <p class="mb-12">
+                                It is the Light Show Controller for our lights located to the right and left of our video screen above the speakers. 							
+							<ul>
+                                <li>Standby/Go facility with remote control capability</li> 
+                                <li>MASTER DIMMER control.</li>
+                                <li>MANUAL flash buttons provide hands on channel control</li>
+                                <li>Individual CHANNEL switches control each channel independent.</li>
+                                <li>4 band Sound-to-Light with CONTRAST control and AVC (Auto Volume Control)</li>
+                                <li>11 Chase Patterns with Auto Change facility and Slope to vary from gentle crossfade to stepping</li>
+								<li>Direction control with Forward, Reverse, Bass, Bounce and Auto Change facility</li>
+                                <li>Chase Speed control allows chases from 10 minutes per step to 50 steps per second</li>
+								<li>Bass Burst chase facility</li>
+								<li>Music signal input socket.(rear Panel)</li>
+								<li>Remote Control input socket.(rear panel)</li>
+                              </ul> 	
+							<li>  
+							<mark class="bg-warning text-white">The Light Controller must be physically plugged in to the electrical socket to use, and physically unplugged from the electrical socket when not in use.</mark>
+							</li>
+                          </p>
+                            <div class="row">
+                              <a href="../assets/images/lights/01.jpg" data-toggle="lightbox" data-gallery="lightcontroller-station" data-title="Front Panel View" class="col-3">
+                                <img src="../assets/images/lights/01.jpg" class="img-fluid">
+                              </a>
+                              <a href="../assets/images/lights/02.jpg" data-toggle="lightbox" data-gallery="lightcontroller-station" data-title="Front Showing Standby, Shimmer, Full Settings " class="col-3">
+                                <img src="../assets/images/lights/02.jpg" class="img-fluid">
+                              </a>
+							  <a href="../assets/images/lights/03.jpg" data-toggle="lightbox" data-gallery="lightcontroller-station" data-title="Front Showing Speed, Chaser, Music + Auto Program, Program Hold, and Constant + Auto Program Controls " class="col-3">
+                                <img src="../assets/images/lights/03.jpg" class="img-fluid">
+                              </a>
+							  <a href="../assets/images/lights/05.jpg" data-toggle="lightbox" data-gallery="lightcontroller-station" data-title="Rear Panel Light Inputs (A/C Sockets)" class="col-3">
+                                <img src="../assets/images/lights/05.jpg" class="img-fluid">
+                              </a>
+							  <a href="../assets/images/lights/06.jpg" data-toggle="lightbox" data-gallery="lightcontroller-station" data-title="Rear panel Close Up on Music Input and Remote Control Input" class="col-3">
+                                <img src="../assets/images/lights/06.jpg" class="img-fluid">
+                              </a>
+							  <a href="../assets/images/lights/07.jpg" data-toggle="lightbox" data-gallery="lightcontroller-station" data-title="Rear panel Showing Power Specs and Sensitivity Adjustment for Bass and Tenor Controls" class="col-3">
+                                <img src="../assets/images/lights/07.jpg" class="img-fluid">
+                              </a>							
+                              <a href="../assets/manuals/Pulsar_Zero_4000_Lighting_Controller.pdf" target="_blank" download= Pulsar_Zero_4000_Lighting_Controller.pdf data-gallery="light Controller-station" class="col-3">
+                                <img src="../assets/images/icons/manual.png" class="img-fluid">
+                              </a>
+							<!--  <a href="https://nwsteamer.github.io/master/manuals/Pulsar_Zero_4000_Lighting_Controller.pdf">Operations Manual</a> -->  
+                              <br/>                          
+                            <div id="lightcontroller-section"></div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <!-- Lightcontroller End -->
+		  
+
+
+
+          <!--
+            
+          -->
+          
+         <!--
+           <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title">Cash deposits</p>
+                  <p class="mb-4">To start a blog, think of a topic about and first brainstorm party is ways to write details</p>
+                  <div id="cash-deposits-chart-legend" class="d-flex justify-content-center pt-3"></div>
+                  <canvas id="cash-deposits-chart"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title">Total sales</p>
+                  <h1>$ 28835</h1>
+                  <h4>Gross sales over the years</h4>
+                  <p class="text-muted">Today, many people rely on computers to do homework, work, and create or store useful information. Therefore, it is important </p>
+                </div>
+                <img src="../assets/images/faces/face4.jpg" alt="image" >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title">Recent Purchases</p>
+                  <div class="table-responsive">
+                    <table id="recent-purchases-listing" class="table">
+                      <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Status report</th>
+                            <th>Office</th>
+                            <th>Price</th>
+                            <th>Date</th>
+                            <th>Gross amount</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <td>Jeremy Ortega</td>
+                            <td>Levelled up</td>
+                            <td>Catalinaborough</td>
+                            <td>$790</td>
+                            <td>06 Jan 2018</td>
+                            <td>$2274253</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin Fisher</td>
+                            <td>Ui design completed</td>
+                            <td>East Mayra</td>
+                            <td>$23230</td>
+                            <td>18 Jul 2018</td>
+                            <td>$83127</td>
+                        </tr>
+                        <tr>
+                            <td>Emily Cunningham</td>
+                            <td>support</td>
+                            <td>Makennaton</td>
+                            <td>$939</td>
+                            <td>16 Jul 2018</td>
+                            <td>$29177</td>
+                        </tr>
+                        <tr>
+                            <td>Minnie Farmer</td>
+                            <td>support</td>
+                            <td>Agustinaborough</td>
+                            <td>$30</td>
+                            <td>30 Apr 2018</td>
+                            <td>$44617</td>
+                        </tr>
+                        <tr>
+                            <td>Betty Hunt</td>
+                            <td>Ui design not completed</td>
+                            <td>Lake Sandrafort</td>
+                            <td>$571</td>
+                            <td>25 Jun 2018</td>
+                            <td>$78952</td>
+                        </tr>
+                        <tr>
+                            <td>Myrtie Lambert</td>
+                            <td>Ui design completed</td>
+                            <td>Cassinbury</td>
+                            <td>$36</td>
+                            <td>05 Nov 2018</td>
+                            <td>$36422</td>
+                        </tr>
+                        <tr>
+                            <td>Jacob Kennedy</td>
+                            <td>New project</td>
+                            <td>Cletaborough</td>
+                            <td>$314</td>
+                            <td>12 Jul 2018</td>
+                            <td>$34167</td>
+                        </tr>
+                        <tr>
+                            <td>Ernest Wade</td>
+                            <td>Levelled up</td>
+                            <td>West Fidelmouth</td>
+                            <td>$484</td>
+                            <td>08 Sep 2018</td>
+                            <td>$50862</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         -->
+          
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">2019 - 2020</span>
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block"><a href="https://github.com/nwmakerspace/nwmakerspace.github.io">Clone the source code of this website for free!</a></span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Build at <a href="http://neill-wycik.coop/">Neill Wycik</a> with<i class="mdi mdi-heart text-danger"></i> by <a href="https://sinamedialab.com">SinaMediaLab</a> based on <a href="https://demo.themewagon.com/preview/free-bootstrap-admin-dashboard-template-majestic-admin">Majestic Admin</a></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="../assets/vendors/base/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="../assets/vendors/chart.js/Chart.min.js"></script>
+  <script src="../assets/vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="../assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../assets/js/off-canvas.js"></script>
+  <script src="../assets/js/hoverable-collapse.js"></script>
+  <script src="../assets/js/template.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../assets/js/dashboard.js"></script>
+  <script src="../assets/js/data-table.js"></script>
+  <script src="../assets/js/jquery.dataTables.js"></script>
+  <script src="../assets/js/dataTables.bootstrap4.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+  <script>
+  $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox({wrapping: false});
+  });
+  </script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>

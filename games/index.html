@@ -1,0 +1,1444 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Neill-Wycik Games Room</title>
+  <!-- plugins:css -->
+  <!-- <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css"> -->
+  <link href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="../assets/vendors/base/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="../assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <!-- End plugin css for this page -->
+  <!--lightbox-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../assets/images/favicon.png" />
+</head>
+<body class="sidebar-icon-only">
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row" >
+      <div class="navbar-brand-wrapper d-flex justify-content-center">
+        <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">  
+          <a class="navbar-brand brand-logo" href="index.html"><img src="../assets/images/logo.svg" alt="logo"/></a>
+          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="../assets/images/logo-mini.svg" alt="logo"/></a>
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-sort-variant"></span>
+          </button>
+        </div>  
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+          <ul class="navbar-nav mr-lg-4 w-100">
+              <li class="nav-item nav-search d-none d-lg-block w-100">
+                  <h3>Games Room</h3>
+              </li>
+            </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <!--  
+          <button type="button" class="btn btn-light bg-white btn-icon mr-3 mt-2 mt-xl-0">
+                    <i class="mdi mdi-download text-muted"></i>
+                  </button>
+          -->
+          
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#overview">
+              <i class="mdi mdi-home menu-icon"></i>
+              <span class="menu-title">Overview</span>
+            </a>
+          </li>
+
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#manager">
+              <i class="mdi mdi-account menu-icon"></i>
+              <span class="menu-title">Facility Managers</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#safety">
+              <i class="mdi mdi-alert menu-icon"></i>
+              <span class="menu-title">Safety Guidelines</span>
+            </a>
+          </li>
+          <!--
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="mdi mdi-circle-outline menu-icon"></i>
+              <span class="menu-title">With subs</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="#">sub1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#">sub2</a></li>
+              </ul>
+            </div>
+          </li>
+          -->
+          <li class="nav-item">
+            <a class="nav-link" href="#ground-rules">
+              <i class="mdi mdi-view-headline menu-icon"></i>
+              <span class="menu-title">Ground Rules</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#gamescloset-section">
+              <i class="mdi mdi-clipboard-text menu-icon"></i>
+              <span class="menu-title">Games Closet Lobby</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#training">
+              <i class="mdi mdi-library-books menu-icon"></i>
+              <span class="menu-title">Training</span>
+            </a>
+          </li>
+		
+          <li class="nav-item">
+            <a class="nav-link" href="#pooltable-section">
+              <i class="mdi mdi-tennis menu-icon"></i>
+              <span class="menu-title">Pool Table</span>
+            </a>
+          </li>
+		
+          <li class="nav-item">
+            <a class="nav-link" href="#foosball-section">
+              <i class="mdi mdi-football menu-icon"></i>
+              <span class="menu-title">Foosball Table</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#chesstable-section">
+              <i class="mdi mdi-checkerboard menu-icon"></i>
+              <span class="menu-title">Chess Table</span>
+            </a>
+          </li>
+		  
+	  <li class="nav-item">
+            <a class="nav-link" href="#darts-section">
+              <i class="mdi mdi-target menu-icon"></i>
+              <span class="menu-title">Darts</span>
+            </a>
+          </li>
+		  
+	  <li class="nav-item">
+            <a class="nav-link" href="#bluray-section">
+              <i class="mdi mdi-blur-radial menu-icon"></i>
+              <span class="menu-title">Blu-ray Player</span>
+            </a>
+          </li>
+		  
+	  <li class="nav-item">
+            <a class="nav-link" href="#tv-section">
+              <i class="mdi mdi-television menu-icon"></i>
+              <span class="menu-title">TV</span>
+            </a>
+          </li>
+		  
+	  <li class="nav-item">
+            <a class="nav-link" href="#stereo-section">
+              <i class="mdi mdi-speaker menu-icon"></i>
+              <span class="menu-title">Bluetooth Speaker</span>
+            </a>
+          </li>
+
+
+          
+          
+
+         
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+
+        <!-- Notification Start -->
+            <div class="row" id="proBanner">
+                
+                <div class="col-md-12 grid-margin">
+                    
+                  <div class="card bg-gradient-primary border-0">
+                    <button id="bannerClose" class="btn border-0 p-0" style="text-align: right;margin: 5px;">
+                        <i class="mdi mdi-close text-white"></i>
+                      </button>
+                    <div class="card-body py-3 px-4 d-flex align-items-center justify-content-between flex-wrap">
+                
+                      <p class="mb-0 text-white font-weight-medium" style="padding-bottom: 10px;"><span style="font-size:26px;">Important Notes</span>
+                        <br/>
+                        <br/>To use the facility you have to complete the following steps:<br/>
+                        <b>(1)</b> Study the materials and take the quiz with satisfactory results - <mark class="bg-warning text-white">Do NOT book for orientation before completing the quiz. Otherwise, we ask you to return another day for orientation</mark><br/>
+                        <b>(2)</b> Book an appointment for orientation session <br>
+                        <b>(3)</b> You are responsible to learn how to use the devices in the facility. The facility managers are <b>NOT responsible</b> for training or adjusting a device (e.g. setting up the Sony Bluetooth Speaker) for your use. If you are not sure how to use or adjust a device, please do not use it before carefully studying the manuals and watching the videos.
+                    </p>
+                      <br>
+      
+                      <div class="d-flex">
+                      
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfiLwXFDlGwwcNIYW8-KfMCNSqX8RXMFnDPHU0VlrEY-SZFSw/viewform?vc=0&c=0&w=1" target="_blank" class="btn btn-outline-light mr-2">Take the Quiz</a>
+                        <a href="https://doodle.com/poll/u6mc5y3zgzq7aqqg" target="_blank" class="btn btn-outline-light mr-2 bg-gradient-danger border-0">Book Orientation Session</a>
+                        
+                      </div>
+                      
+                    </div>
+                    <div id="overview" ></div>
+                  </div>
+                </div>
+              </div>
+          <!-- Notification End -->
+          <div class="row">
+              <div class="col-md-12 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body dashboard-tabs p-0">
+                    <ul class="nav nav-tabs px-4" role="tablist">
+                      
+                      <li class="nav-item">
+                        <a class="nav-link active" id="sales-tab" data-toggle="tab" href="#sales" role="tab" aria-controls="sales" aria-selected="true">Pool Table</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="sales-tab" data-toggle="tab" href="#sales2" role="tab" aria-controls="sales2" aria-selected="false">Bluray</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="purchases-tab" data-toggle="tab" href="#purchases" role="tab" aria-controls="purchases" aria-selected="false">TV</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content py-0 px-0">
+
+                      <div class="tab-pane fade show active" id="sales" role="tabpanel" aria-labelledby="sales-tab">
+                        <div class="d-flex flex-wrap justify-content-xl-between">
+                          
+                          <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-information mr-3 icon-lg text-success"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Brand</small>
+                          <!--<small class="mb-1 text-muted"><a href="https://www.flashforge.com/consumer/detail/Creator%20Pro?id=4" target="_blank">Flashforge Creator Pro</a> </small>-->
+                              <h5 class="mr-2 mb-0"><a href="#pooltable-section">Rules and more information</a></h5>
+                            </div>
+                          </div>
+
+                          <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-video icon-lg mr-3 text-danger"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Video Tutorials</small>
+                              <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle p-0 bg-transparent border-0 text-dark shadow-none font-weight-medium" href="#" role="button" id="dropdownMenuLinkA" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <h5 class="mb-0 d-inline-block">Watch here</h5>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkA">
+                                  <a class="dropdown-item" href="https://www.youtube.com/watch?v=z89eJUwuwII&ab_channel=Mr.Animate" data-toggle="lightbox" data-width="1280"><i mdi mdi-video menu-icon></i>Snooker Rules Explained</a>
+                                  <a class="dropdown-item" href="https://www.youtube.com/watch?v=eDKt-kaOtGE&ab_channel=NinhLy" data-toggle="lightbox" data-width="1280"><i mdi mdi-video menu-icon></i>Eight Ball Rules Explained</a>
+                                  <a class="dropdown-item" href="https://www.youtube.com/watch?v=TtAirtSOXwk&ab_channel=eHowFitness" data-toggle="lightbox" data-width="1280"><i mdi mdi-video menu-icon></i>How To Rack The Balls in Billiards</a>
+				  <a class="dropdown-item" href="https://www.youtube.com/watch?v=KDbVaRIjFIw&ab_channel=CharlieMatthews" data-toggle="lightbox" data-width="1280"><i mdi mdi-video menu-icon></i>How To Rack The Balls in Snooker</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-download mr-3 icon-lg text-primary"></i>
+                            <div class="d-flex flex-column justify-content-around">     
+                              <small class="mb-1 text-muted">Downloads</small>
+                              <small class="mb-1 text-muted"> <a href="https://nwgames.github.io/manuals/Pool_Table_SpecsBCII_EN.pdf"target="_blank" download=Pool_Table_SpecsBCII_EN.pdf>Specifications</a> </small> 
+                              
+			      <!--  <h5 class="mr-2 mb-0"> <a href="https://github.com/nwgames.github.io/master/manuals/Creator%20Pro%20User%20Guide-English%20for%20Print.pdf">Placement and Particulars</a></h5> -->
+                                            
+                            </div>
+                          </div>
+
+             
+                          
+                          <div class="d-flex py-3 border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-flag mr-3 icon-lg text-warning"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Email: gamesroom@neill-wycik.ca</small>
+                              <h5 class="mr-2 mb-0">
+                                <a href="mailto:gamesroom@neill-wycik.ca?Subject=Enter The Subject Here" target="_top">Report a problem</a>
+                              </h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="tab-pane fade" id="sales2" role="tabpanel" aria-labelledby="sales2-tab">
+                        <div class="d-flex flex-wrap justify-content-xl-between">
+                          <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-calendar-heart icon-lg mr-3 text-primary"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Updates coming soon!</small>
+                              <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle p-0 bg-transparent border-0 text-dark shadow-none font-weight-medium" href="#" role="button" id="dropdownMenuLinkA" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <h5 class="mb-0 d-inline-block">Updates coming soon!</h5>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkA">
+                                  <a class="dropdown-item" href="#" data-toggle="lightbox" data-width="1280"><i mdi mdi-video></i> Updates coming soon!</a>
+                                  <a class="dropdown-item" href="#">Updates coming soon!</a>
+                                  <a class="dropdown-item" href="#">Updates coming soon!</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-download mr-3 icon-lg text-warning"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Updates coming soon!</small>
+                              <h5 class="mr-2 mb-0">Updates coming soon!</h5>
+                            </div>
+                          </div>
+                          <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-eye mr-3 icon-lg text-success"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Updates coming soon!</small>
+                              <h5 class="mr-2 mb-0">Updates coming soon!</h5>
+                            </div>
+                          </div>
+                          
+                          <div class="d-flex py-3 border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-flag mr-3 icon-lg text-danger"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Updates coming soon!</small>
+                              <h5 class="mr-2 mb-0">Updates coming soon!</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+
+                      <div class="tab-pane fade" id="purchases" role="tabpanel" aria-labelledby="purchases-tab">
+                        <div class="d-flex flex-wrap justify-content-xl-between">
+                          <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-calendar-heart icon-lg mr-3 text-primary"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Updates coming soon!</small>
+                              <div class="dropdown">
+                                <a class="btn btn-secondary dropdown-toggle p-0 bg-transparent border-0 text-dark shadow-none font-weight-medium" href="#" role="button" id="dropdownMenuLinkA" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <h5 class="mb-0 d-inline-block">Updates coming soon!</h5>
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkA">
+                                  <a class="dropdown-item" href="#">Updates coming soon!</a>
+                                  <a class="dropdown-item" href="#">Updates coming soon!</a>
+                                  <a class="dropdown-item" href="#">Updates coming soon!</a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-eye mr-3 icon-lg text-success"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Updates coming soon!</small>
+                              <h5 class="mr-2 mb-0">Updates coming soon!</h5>
+                            </div>
+                          </div>
+                          <div class="d-flex border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-download mr-3 icon-lg text-warning"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Updates coming soon!</small>
+                              <h5 class="mr-2 mb-0">Updates coming soon!</h5>
+                            </div>
+                          </div>
+                          <div class="d-flex py-3 border-md-right flex-grow-1 align-items-center justify-content-center p-3 item">
+                            <i class="mdi mdi-flag mr-3 icon-lg text-danger"></i>
+                            <div class="d-flex flex-column justify-content-around">
+                              <small class="mb-1 text-muted">Updates coming soon!</small>
+                              <h5 class="mr-2 mb-0">Updates coming soon!</h5>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <!-- Overview Start -->
+          <div class="mr-md mr-xl">
+              <div class="row">
+                  <div class="col-md-12 grid-margin stretch-card">
+                      <div class="card">
+                          <div class="card-body">
+                              <h2>
+                                  <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                                  Overview
+                              </h2>
+                          <p class="mb-12">The Neill-Wycik Games Room is a space that allow members of the co-op to unwind and chill out with other members. Getting a few people together for a Pong-Pong Turnament, or a Pool Turnament is a great way to unwind and blow off a little steam. Due to the nature of the components inside the space, both in terms of cost and safety, it is necessary to lay out the ground rules for usage of the space to ensure proper training of students who wish to use the space and minimize the risk of injuries and property damage as a result. <br>We support a cooperative culture where:</p>
+                          
+                            <ul>
+                                <li>Everyone has <mark class="bg-warning text-white">responsibility for learning the right way of using equipment.</mark></li>
+                                <li>Everyone shares <mark class="bg-warning text-white">responsibility for safety.</mark></li>
+                                <li>We <mark class="bg-warning text-white">support one another</mark> and are receptive to feedback.</li>
+                                <li>Feedback is encouraged.</li>
+                                <li>Positive experiences are created.</li>
+                           </ul>
+
+                          <p class="mb-12">
+                          This is a space to have FUN, UNWIND, be COOPERATIVE, and PLAY SAFELY. Please adhere to posted safety and equipment guidelines, report damaged or unclean equipment, and ask questions.
+                          </p>
+                          <div class="row justify-content-center">
+                              <div class="col-md-12">
+                                  <div class="row">
+                                      <a href="../assets/images/general/01.jpg" data-toggle="lightbox" data-gallery="Games Room" class="col-3">
+                                        <img src="../assets/images/general/01.jpg" class="img-fluid">
+                                      </a>
+                                      <a href="../assets/images/general/02.jpg" data-toggle="lightbox" data-gallery="Games Room" class="col-3">
+                                          <img src="../assets/images/general/02.jpg" class="img-fluid">
+                                      </a>
+                                      <a href="../assets/images/general/03.jpg" data-toggle="lightbox" data-gallery="Games Room" data-title="Safety Equipment" class="col-3">
+                                          <img src="../assets/images/general/03.jpg" class="img-fluid">
+                                      </a>
+                                      <a href="https://youtu.be/wiA9zeReA7U" data-toggle="lightbox" data-gallery="Games Room" lass="col-3">
+                                        <img src="../assets/images/icons/youtube.png" class="img-fluid">
+                                      </a>
+                                  </div>
+                                  <br>
+                              </div>
+                          </div>
+                          <div id="manager" ></div>
+                          
+                        </div>
+                          
+                    </div>
+                  </div>
+              </div>
+              
+          </div>
+          <!-- Overview End -->
+
+                     <!-- Manager Start -->
+                     <div class="mr-md mr-xl">
+                      <div  class="row">
+                          <div class="col-md-12 grid-margin stretch-card">
+                              <div class="card">
+                                  <div class="card-body">
+                                    <h2>
+                                      <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                                      Facility Manager and Assistant
+                                    </h2>
+                                    <br>
+                                    <p class="mb-12">
+                                      To contact the Facility Manager or Sssistant Manager please use <b>gamesroom@neill-wycik.ca</b>
+                                      <ul>
+                                        <li>Facility Manager: <!--<a href="" target="_blank">--><b>Jesenia</b></a></li>
+                                        <li>Facility Assistant: <!--<a href="" target="_blank">--><b>Coming Soon</b></a></li>
+                                      </ul>
+                                    </p>
+                                    
+                                      <div class="row">
+                                        <a href="../assets/images/manager/02.jpg" data-toggle="lightbox" data-gallery="managers" data-title="Facility Manager: Ghassem " class="col-3">
+                                          <img src="../assets/images/manager/02.jpg" class="img-fluid">
+                                        </a>
+                                  <!--  <a href="../assets/images/manager/02.jpg" data-toggle="lightbox" data-gallery="managers" data-title="Facility Assistant: Ali " class="col-3">
+                                          <img src="../assets/images/manager/02.jpg" class="img-fluid">
+                                        </a> -->
+                                     </div>
+                                     <br/>
+          
+                                      <div id="safety" ></div>
+                                  </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <!-- Manager End -->
+
+          <!-- Safety Start -->
+          <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Safety Guidelines
+                          </h2>
+                          <br>
+                          <h3>Report all Injuries/Incidents</h3>
+                            <ul>
+                              <li>Immediately report ALL accidents, injuries, or incidents to <b>security at front desk</b>.</li>
+                              <li>Immediately discontinue use of the equipment if it becomes unsafe, damaged, or is not working properly.</li>
+                              <li>Notify a Games Room Manager or Assistant Manager.</li>
+                            </ul>
+
+                         <h3>Safe Conduct Agreement</h3>
+                         <ul>
+                           <li>Use the space and Games Tables and Darts safely.</li>
+						   <li>Leave the space and equipment in clean and working condition.</li>
+                           <li>Do not use a device if you are not sure how to use it.</li>                           
+                           <li>Abide by SAC, safety, and fire regulations and comply with the rules and regulations of the equipment, whether posted or otherwise imposed by SAC.</li>
+                         </ul>
+
+                         
+
+                         <h3>Use Games Tables and Darts Correctly</h3>
+                           <ul>
+                             <li>Use equipment how they are designed to be used.</li>
+                             <li>Never use any broken item. Report any damaged or broken Games Tables, Darts, furniture, or fixtures to a Music Room Manager immediately (take photos and attach them in your email).</li>
+                             <li>Do not remove equipment from the Games Room.</li>                             
+                           </ul>
+                          
+                          <h3>Food and Drinks</h3>
+                          <ul>
+                            <li><mark class="bg-warning text-white">Drink and food are permitted. Also, you are responsible for cleaning up after yorself and not leaving the space in an untidy state.</mark></li>
+			    <li><mark class="bg-warning text-white">Alcohol is not permitted in this space.</mark></li>
+                          </ul>
+
+                          <h3>First Aid Equipment</h3>
+                          <ul>
+                            <li>
+                              There is a first aid equipment kit on the wall of the room.
+                            </li>
+                          </ul>
+                          <br>
+                          <div class="row justify-content-center">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <a href="../assets/images/safety/01.jpg" data-toggle="lightbox" data-gallery="safety" class="col-3">
+                                      <img src="../assets/images/safety/01.jpg" class="img-fluid">
+                                    </a>
+                                    <a href="../assets/images/safety/02.jpg" data-toggle="lightbox" data-gallery="safety" class="col-3">
+                                        <img src="../assets/images/safety/02.jpg" class="img-fluid">
+                                    </a>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+                        
+                        <div id="training" ></div>
+
+                        </div>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+          <!-- Safety End -->
+
+           <!-- Training Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Training
+                          </h2>
+                          <br>
+                          <p class="mb-12">Before any member can utilize the space, there will be a requirement for them to undergo an orientation session with either the manager of the space or either of the assistant managers. This training will include, but not be limited to:</p>
+                            <ul>
+                              <li>The locations and proper usage of the Emergency Supplies (First Aid Kits and Eyewash Station) inside of the space</li>
+                              <li>An overview of the procedural rules of the space (including occupancy limits for the space, cleaning requirements of the space, sign in procedures, guest policy, etc ... )</li>
+                              <li>Orientation training on the usage and care of of the various instruments available inside of the space, particularly the Pool Table and Ping Pong Table, and:Training on the usage of the various tools available inside of the space, particularly the chesstable irons and 3D printer, and:</li>
+                              <li>A practical test of said training in the form of an online quiz (proper set up and useage of the Ping Pong Table and when to report issues)</li>
+                            </ul>
+              
+                            <div id="ground-rules" ></div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+          <!-- Training End -->
+
+          <!-- Rules Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Ground Rules for the Games Room
+                          </h2>
+                          <br>
+                          <p class="mb-12">The ground rules for the Games Room shall be as follows. Violation of any of the rules of the space will lead to loss of usage privileges:</p>
+                            <ul>
+                              <li>You Need to Sign into the Games Room. How? You need to exchange your Member ID card at Security to get the key.</li>
+                              <li>No Glass Containers in the Games Room. If you bring in glass you will be asked to remove  the glass in order to use the facility.</li>
+                              <li>No Excessively Loud Music. Any audio device including the Games Room Radio, cannot be played so loud as to interfere with the members living in nearby units. Be respectful and courteous to others. If asked to turn down the music then do so.</li>
+                              <li>Please report any damage. Report any damage, or facility abuse / misuse to Security, and the Games Room Facility Manager.</li>
+                              <li>Please put all Garbage / Recycling in the bins provided. Please remove all Recycling & Garbage to the Garage Bins. Food Waste, & Recycling left behind only attracts Wildlife!</li>
+                              <li>Leave the room in a clean state.</li>
+			      <li>You are responsible for cleaning up after yourself. Please practice common courtesy towards your fellow members!</li>
+                              <li>Any and all damage or emergencies must immediately be reported to both Security and the Facility Manager/Assistants.</li>
+                            </ul>
+              
+                            <div id="gamescloset-section" ></div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+          <!-- Rules End -->
+
+           <!-- GamesCloset Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                           Games Closet Games
+                          </h2>
+                          <br>
+                          <p class="mb-12">				 
+                           <li>We have a vriety of Games avaliable to members 24 hours a day. Please click on the image to download the list. The Games Closet is located in the Lobby adjacent to the Security Desk. You need to request access from the security guard on duty.</li></p>
+				</p>
+				<p>Games Avaliable To Members							  
+
+                                <a href="../assets/manuals/Games_Closet_List_Of_Games.pdf"target="_blank" download=Games_Closet_List_Of_Games.pdf data-gallery="gamescloset-section" class="col-3">
+                                <img src="../assets/images/icons/boardgamesicon.png" class="img-fluid">
+					             </a></p> 
+								  </ul> 		
+                            <!--
+                            Any projects being worked on by a member shall be allowed to be kept in the shortterm storage in the space for up to <b>48 hours</b> without notifying a facility manager/assistant. Storage for up to <b>30 days</b> for small projects will be available after notification of a manager/assistant. larger projects may be accommodated on a case by case basis, but the manager/assistant managers reserve the right to request removal of Projects which take up too much space on the grounds of safety for the members using the space.
+                            -->
+                          </p>
+                            <div id="pooltable-section" ></div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+          <!-- Games Closet End -->           
+		   
+	  <!-- pooltable Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Pool Table Rules
+                          </h2>
+                          <br>
+                          
+                          <div class="row justify-content-center">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <a href="../assets/images/billiards/01.jpg" data-toggle="lightbox" data-gallery="billiards" class="col-3">
+                                      <img src="../assets/images/billiards/01.jpg" class="img-fluid">
+                                    </a>
+                                    <a href="../assets/images/billiards/02.jpg" data-toggle="lightbox" data-gallery="billiards" class="col-3">
+                                        <img src="../assets/images/billiards/02.jpg" class="img-fluid">
+                                    </a>
+                                    <a href="../assets/images/billiards/03.jpg" data-toggle="lightbox" data-gallery="billiards" data-title="" class="col-3">
+                                        <img src="../assets/images/billiards/03.jpg" class="img-fluid">
+                                    </a>                                  
+                                </div>
+                                <br>
+                            </div>
+                         </div>
+
+                          <p class="mb-12">
+                            Our Pool Table can easily be converted to a Ping Pong Table with the kit provided in the Games Room. Prior to using the Ping Pong Kit, or any of the Games Room equipment you must complete the mandatory Orientation Quiz, A Code of Conduct and Safety Quiz.
+                            The following rules must be followed with respect to using the Pool Table and the Ping Pong Kit:
+                          </p>
+                          <ul>
+                            <li>
+                              Before use, please enurer you leave the pool table vinyl cover in place before placing the Ping Pong Kit on top. This ensures the Pool Table bumpers will not be scuffed or ripped.
+                            </li>
+                            <li>
+                              <mark class="bg-warning text-white">Please ensure that you do not leave any liquids on any surface of the Pool Table. We ask this to ensure the cloth surfaces do not become damaged and stained</mark>
+                            </li>
+                            <li>
+                              <mark class="bg-warning text-white">The Games Room may be booked for events like a Pool Tournament or Darts Contest. Please email our gamesroom@neill-wycik.ca for details about how to do this.</mark>
+                            </li> 
+							</ul>
+                            </li>
+                          </ul>
+                          <h3>
+                            <a href="#billards-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            What is important to know about our Pool Table?
+                          </h3>
+                                
+                          <p class="mb-12">
+                                The Pool Table as are all the other items in the Games Room have been provided for member use - you are responsible for any damage or misue of the facility by guests you have either signed into the building or allowed to use the Games Room.
+                          </p>
+						                            
+                          <h3>
+                            <a href="#billards-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Where do I start?
+                          </h3>
+                                
+                          <p class="mb-12">
+                                If you are new to playing pool and wish to learn the basics, start with some of these online videos and rule sheets we have linked here for you. They are easy, interactive tutorials which teach the basics of playing Pool.</p>
+
+                                 <p>Snooker Rules Explained
+								 
+							  <a href="https://www.youtube.com/watch?v=z89eJUwuwII&ab_channel=Mr.Animate" data-toggle="lightbox" data-gallery="Games Room" lass="col-3">
+                                        <img src="../assets/images/icons/youtube.png" class="img-fluid">
+                                      </a></p>
+									  
+								<p>Eight Ball Rules Explained
+								 
+							  <a href="https://www.youtube.com/watch?v=eDKt-kaOtGE&ab_channel=NinhLy" data-toggle="lightbox" data-gallery="Games Room" lass="col-3">
+                                        <img src="../assets/images/icons/youtube.png" class="img-fluid">
+                                      </a></p>	 
+							  
+                                 <p>General Understanding of Bar Rules							  
+
+                                <a href="../assets/manuals/WPA_New_Rules_01MAR2016-fixed-spelling.pdf"target="_blank" download=WPA_New_Rules_01MAR2016-fixed-spelling.pdf data-gallery="billiards-station" class="col-3">
+                                <img src="../assets/images/icons/rules.png" class="img-fluid">
+					             </a></p> 
+								  </ul> 
+                                								 
+                                <h3><a href="#billiards-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                                     What is Important About Our Pool Table?
+                          </h3>
+                                <p class="mb-12">
+                                 We have everything necessary for playing Eight Ball and Snooker. Also our Pool Table has a Ping Pong Table members can enjoy a good game of Ping Pong.
+                              </p>
+					<ul>
+					    <li>Please leave the soft vinyl cover <b>on</b> the Pool Table When setting up for Ping Pong.</li>
+					    <li>There is spare chalk for the cue sticks. Please inform the Games Room Manager if the chalk needs replacing.</li>
+		                       </ul>
+                                <div class="row justify-content-center">
+                                  <div class="col-md-12">
+                                      <div class="row">
+                                    <!-- <a href="../assets/images/billards/04.jpg" data-toggle="lightbox" data-gallery="Pool Table View Towards Door" data-title="Limitations on printing" class="col-3">
+                                            <img src="../assets/images/billards/04.jpg" class="img-fluid">
+                                         </a> -->
+                                      </div>
+                                      <br>
+                                  </div>
+                               </div>
+
+                            <div id="foosball-section" ></div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+          <!-- Billiards End --> 
+
+
+           <!-- foosball Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Foosball Table Rules
+                          </h2>
+                          <br>
+                          
+                          <div class="row justify-content-center">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <a href="../assets/images/fooseball/01.jpg" data-toggle="lightbox" data-gallery="fooseball" class="col-3">
+                                      <img src="../assets/images/fooseball/01.jpg" class="img-fluid">
+                                    </a>
+                                    <a href="../assets/images/fooseball/02.jpg" data-toggle="lightbox" data-gallery="fooseball" class="col-3">
+                                        <img src="../assets/images/fooseball/02.jpg" class="img-fluid">
+                                    </a>
+                                    <a href="../assets/images/fooseball/03.jpg" data-toggle="lightbox" data-gallery="fooseball" data-title="" class="col-3">
+                                        <img src="../assets/images/fooseball/03.jpg" class="img-fluid">
+                                    </a>
+                              <!--  <a href="../assets/images/fooseball/04.jpg" data-toggle="lightbox" data-gallery="3dprinter" data-title="Limitations on printing" class="col-3">
+                                      <img src="../assets/images/fooseball/04.jpg" class="img-fluid">
+                                   </a>  -->
+                                </div>
+                                <br>
+                            </div>
+                         </div>
+
+                     <!--     <p class="mb-12">
+                            3D printer is available for making three-dimensional objects in filament using a design uploaded from a digital file. Prior to using the 3D printer, you must complete the mandatory Orientation Quiz, A Code of Conduct and Safety Quiz. 3D printing services are offered in a non-commercial capacity. Mass quantity printouts will be referred to a commercial company.
+                            The following rules must be followed with respect to using the 3D printer:
+                          </p>
+                          <ul>
+                            <li>
+                              Before use, confirmation is needed that there is enough ABS or PLA to print the required part
+                            </li>
+                            <li>
+                              <mark class="bg-warning text-white">All projects to be printed must receive approval before 7 PM (send your file to makerspace@neill-wycik.ca for approval)</mark>
+                            </li>
+                            <li>
+                              <mark class="bg-warning text-white">All usage of the 3D printer must be approved before printing is stared by a facility manager / assistant manager. Running the machine without such approval is prohibited</mark>
+                            </li>
+                            <li>
+                              Any instance of smoke emitting from the machine must immediately be reported to both security and facility managemer
+                            </li>
+                            <li>
+                              Makerspace 3D printer may be used only for lawful purposes and Neill-Wycik Makerspace reserves the right to refuse any print request. The printers cannot be used to create material that is:
+                              <ul>
+                                <li>
+                                  Prohibited by provincial or federal law.
+                                </li>
+                                <li>
+                                  Unsafe, harmful, dangerous, or poses an immediate threat to the well-being of others.
+                                </li>
+                                <li>
+                                  In violation of the intellectual property rights of others. For example, reproducing 
+                                </li>
+                                <li>
+                                  material that is subject to copyright, patent, or trademark protection.
+                                </li>
+                                <li>
+                                  A weapon, in part or whole, or any object that can be mistaken for a weapon.
+                                </li>
+                                <li>
+                                  Too large for the printer.
+                                </li>
+                                <li>
+                                  Lewd, malicious, or otherwise unsuitable for creating a welcoming and inclusive public space.
+                                </li>
+
+                              </ul>
+                            </li>
+                          </ul>  -->
+                          <h3>
+                            <a href="#foosball-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            What is Important About Our Foosball Table?
+                          </h3>
+                                
+                          <p class="mb-12">
+                                Our Foosball Table is not all that delicate, but we do ask you play responsibly on it so it will be around for many years to come.
+                                In this section we want to give you all kinds of fun and useful information on learning as much as you want to about Foosball.
+                                We will direct you to a website that is a wealth of information about Fooseball (videos, PDF Files etc), and a Glossary of Terms Sheet that you can download.
+                          </p>
+						  <p class="mb-12">
+                           If you are new to playing Foosball and wish to learn the basics, start with thisonline video and rule sheets we have linked here for you. They are easy, interactive tutorials which teach the basics of playing Pool.</p>
+
+                                 <p>Foosball Rules Explained
+								 
+				   <a href="https://www.youtube.com/watch?v=EJiFNfuIBAs&ab_channel=HowToLou" data-toggle="lightbox" data-gallery="Games Room" lass="col-3">
+                                        <img src="../assets/images/icons/youtube.png" class="img-fluid">
+                                      </a></p>
+					 The 6 basic Foosball Rules			  
+					  </p>
+				       <ul>					   	  
+					   <li><b>Flip A Coin</b> - A coin flip decides who serves the foosball to start the foosball game. After the first goal is scored, the rule is that the team who was last scored on gets to serve the next ball. This rule keeps the game fair for both opponents. The foosball must be touched by a man before the ball goes into a goal for a legal goal to occur.</li>
+					   <li><b>No Spinning</b> - A spin is a rule for when the rod completes a 360 degree rotation without touching the ball. This is deemed an illegal move in the rules of foosball.</li>
+					   <li><b>No Jarring</b> - Jarring is a rule for when a player slams his or her rods against the wall of the foosball table in an attempt to distract or jar the foosball loose from the other player's possession. The rule is that there is no jarring allowed at any point during a game. This is not the same as when a player on the opposite team moves his or her foosball rods back and forth in an attempt to play defense. The key this rule is when a player hits the wall of the table with enough force to jar the ball or distract the opponent. That is why this is a subjective rule that may be called more strict by certain foosball player</li>
+					   <li><b>Dead Balls</b> - If a foosball stops in the middle of two opposing team rods, the ball must be picked up and reserved. The serve goes back to the team that was last scored on. If a dead ball occurs on the defensive side of the table behind the defensive 2 bar, the defensive player must move the ball back into playing position. This rule is in place so players don't cause a dead ball on purpose in order to force a reserve.</li>  
+					   <li><b>Out of Play</b> - If a ball comes off the table area or hits a top rail and comes back into the table area, the ball is ruled out of play and must be reserved by the team that was last scored on. </li>
+					   <li><b>5 Bar Passing</b> - These 5 bar passing rules are a little complex if you have never played tournament foosball. These passing rules do not apply to the other foosball rods, just the 5 bar. You are required to pass the ball within a 10 second time period from your 5 bar rod to the offensive 3 bar rod directly after a serve. After the initial serve, you then are allowed 15 seconds to pass from the 5 bar. A ball cannot be completely stopped on the 5 bar and passed forward to the 3 bar, it must be moving and touch 2 men on the 5 bar before being advanced. Additionally, the ball can only touch the wall a total of 2 times in a row (before touching a man again on the 5 bar) before being advanced. However, it can touch the ball a 3rd time if it is part of the pass.</li>		  
+							    </ul>		  
+							<!--	<p>Eight Ball Rules Explained
+								 
+							  <a href="https://www.youtube.com/watch?v=eDKt-kaOtGE&ab_channel=NinhLy" data-toggle="lightbox" data-gallery="Games Room" lass="col-3">
+                                        <img src="../assets/images/icons/youtube.png" class="img-fluid">
+                                      </a></p> -->
+							 <h3>
+                            <a href="#foosball-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Want To Learn How To Play Foosball?
+                            </h3> 
+                                 <p>Foosball Learning Resources	
+								   
+					<ul> 
+					   <li><a href="https://www.foosballsoccer.com/videos.html" target="_blank">Videos</a></li>	  
+                                           <li><a href="https://www.foosballsoccer.com/foosball-101.html" target="_blank">Foosball 101</a></li>
+					   <li><a href="https://www.foosballsoccer.com/shots--offense.html" target="_blank">Shots-Offense </a></li>
+			                    Glossary of Terms
+					    <a href="../assets/manuals/FOOSBALL_GLOSSARY.pdf"target="_blank" download=FOOSBALL_GLOSSARY.pdf data-gallery="fooseball-station" class="col-3">
+                                               <img src="../assets/images/icons/rules.png" class="img-fluid">
+					        </a></p> 						
+			                </ul> 
+			<!-- <h3>
+                            <a href="#foosball-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Want To Learn How To Play Foosball?
+                          </h3>
+                                
+                          <p class="mb-12">
+                                If you are new to 3D printing and wish to learn the basics, start with Tinkercad. It has easy, interactive tutorials which teach the basics of 3D modeling.
+
+                                How do I use the 3D printer?
+
+                                You will be required to complete a one-time mandatory 3D Printing orientation and sign a Makerspace User Agreement. Once you have passed the training with 100% and completed the User Agreement you can submit your jobs to a Makerspace Manager or Assistant Manager (Email).You will be asked to complete a 3D Design Checklist and review your submission.
+                                <h3>
+                                  <a href="#fooseball-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                                What can I print?
+                                </h3>
+                                <p class="mb-12">
+                                While the possibilities may seem endless, there are some limitations around printing. Some designs may be too large for our printer, or may not suitable for printing with PLA material.
+                                The Makerspace equipment may be used only for lawful purposes. Equipment cannot be used to create above-mentioned material.
+                              </p>
+                              <h3>
+                                <a href="#foosball-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                              Finding a Design
+                              </h3>
+                              <p class="mb-12">
+                                All objects printed from a 3D printer start off with a design created using Computer Aided Design (CAD) software. You can either find a design that is print-ready or you can design your own.
+                              </p>
+                              <h3><a href="#foosball-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                                Create your own design
+                              </h3>
+                              <p class="mb-12">
+                                If you are creating your own design, choose a modeling software based on whether or not your model is solid or mesh. Examples of CAD software suitable for 3D printing include:
+                              </p>
+                              <ul>
+                                <li>Onshape</li> 
+                                <li>Tinkercad (good choice for beginners)</li>
+                                <li>Autodesk Fusion 360</li>
+                                <li>GitHub</li>
+                                <li>GrabCAD</li>
+                                <li>SolidWorks</li>
+                                <li>Find a design</li>
+                              </ul>
+                              <p class="mb-12">
+                                There are many websites that offer free or inexpensive 3D design which can be downloaded for printing, including:
+                              </p>
+                              <ul>
+                                <li>Instructables</li>
+                                <li>MyMiniFactory</li>
+                                <li>Pinshape</li>
+                                <li>Thingiverse</li>
+                              </ul>
+                              <h3><a href="#foosball-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a>  
+                              Check your design
+                              </h3>
+                              <p class="mb-12">
+                                Most 3D design programs will create an STL file. If your file is not .STL you can convert it using a free 3D design file converter.
+                                To minimize the risk of a failed print we recommend you run your design through a file-checking program to identify and repair mistakes prior to printing. These free programs will modify and repair .STL files:
+                                </p>
+                                <ul>
+                                  <li>Gcode Analyzer</li>
+                                  <li>Meshlab</li>
+                                  <li>Meshmixer</li>
+                                  <li>Willit 3D print?</li>
+                                </ul>
+                                
+                                
+                                <h3><a href="#foosball-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a>  
+                                Prepare your model for 3D printing
+                                </h3>
+                                <p class="mb-12">
+                                You can save your file on the available flash memory in 3D printer and print it using the above-mentioned manual.
+                                </p>
+                                <h3><a href="#foosball-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                                Limitations
+                                </h3>
+                                <ul>
+                                  <li>Maximum size: 227 mm long x 148 mm wide x 150 mm high</li>
+                                  <li>Maximum print time is 2 hours</li>
+                                  <li>We will not permit use of personal filament before checking it</li>
+                                  <li>Personal jobs: limited to 100 grams per month</li>
+                                </ul> -->
+                                <div class="row justify-content-center">
+                                  <div class="col-md-12">
+                                      <div class="row">
+                                   <!-- <a href="../assets/images/fooseball/04.jpg" data-toggle="lightbox" data-gallery="3dprinter-limits" data-title="Limitations on printing" class="col-3">
+                                            <img src="../assets/images/fooseball/04.jpg" class="img-fluid">
+                                         </a> -->
+                                      </div>
+                                      <br>
+                                  </div>
+                               </div>
+
+                            <div id="chesstable-section" ></div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+          <!-- Foosball End --> 
+
+	   <!-- Chesstable Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Chess Table
+                          </h2>
+                          <br>
+                          
+                            <div class="row">
+                              <a href="../assets/images/chesstable/01.jpg" data-toggle="lightbox" data-gallery="chesstable-station" data-title="" class="col-3">
+                                <img src="../assets/images/chesstable/01.jpg" class="img-fluid">
+                              </a>
+                              <a href="../assets/images/chesstable/03.jpg" data-toggle="lightbox" data-gallery="chesstable-station" data-title="" class="col-3">
+                                <img src="../assets/images/chesstable/03.jpg" class="img-fluid">
+                              </a>
+                         <!-- <a href="../assets/images/chesstable/03.jpg" data-toggle="lightbox" data-gallery="chesstable-station" data-title="" class="col-3">
+                                <img src="../assets/images/chesstable/03.jpg" class="img-fluid">
+                              </a>
+                            <a href="https://youtu.be/thzMKXS_zms" data-toggle="lightbox" data-gallery="chesstable-station" lass="col-3">
+                              <img src="../assets/images/icons/youtube.png" class="img-fluid">
+                            </a>  --->
+                           </div>
+                           <br/>
+
+                          <h3><a href="#chesstable-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            What is Important About Our Chess Table?
+                          </h3>
+                          <ul>
+			   <li>We keep the checkers in the drawer of the Chess Table. If you discover a broken one or mising Checker piece; please contact our Facility Manager.</li>
+                           <li>We ask that you behave responsibly when using the Chess Table and any other equipment in the Games Room.</li>
+			   <li>We ask if you find any of the Chess Pieces broken or missing; please contact our Facility Manager</li>
+			   </ul>
+
+
+                          <h3><a href="#chesstable-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Want to Learn How to Play Chess?
+                          </h3>  
+                          <ul>
+				 <p>Chess Rules 
+                                <a href="../assets/manuals/BasicChessRules.pdf"target="_blank" download=BasicChessRules.pdf data-gallery="chesstable-station" class="col-3">
+                                   <img src="../assets/images/icons/rules.png" class="img-fluid">
+				  </a></p>
+			         <p>Basic Strategy For Playing Chess
+                               <a href="https://www.youtube.com/watch?v=cXIfO3aKA8I&ab_channel=RemoteChessAcademy" data-toggle="lightbox" data-gallery="chesstable-station" lass="col-3">                              <img src="../assets/images/icons/youtube.png" class="img-fluid">
+			    </a></p>
+                          </ul> 
+			
+                            <div id="darts-section" ></div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <!-- chesstable End -->
+          
+          <!-- Darts Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Darts
+                          </h2>
+                          <br>
+                          
+                            <div class="row">
+                              <a href="../assets/images/darts/01.jpg" data-toggle="lightbox" data-gallery="chesstable-station" data-title="" class="col-3">
+                                <img src="../assets/images/darts/01.jpg" class="img-fluid">
+                              </a>
+                              <a href="../assets/images/darts/02.png" data-toggle="lightbox" data-gallery="chesstable-station" data-title="" class="col-3">
+                                <img src="../assets/images/darts/02.png" class="img-fluid">
+                              </a>                              
+                              <a href="https://www.youtube.com/watch?v=9gB5ybp_7s8&ab_channel=CBCNL-NewfoundlandandLabrador" data-toggle="lightbox" data-gallery="chesstable-station" lass="col-3">
+                                <img src="../assets/images/icons/youtube.png" class="img-fluid">
+                             </a>
+                            </div>
+                            <br/>
+
+                          <h3><a href="#darts-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            What Is Important About the Dart Board and Darts?
+                          </h3>
+                          <ul>
+						    <li>We have a supply of Spare Darts. If you discover a broken one or mising Darts; please contact our Facility Manager.</li>
+                            <li>We ask that you behave responsibly when using the Darts and any other equipment in the Games Room.</li>                            
+                          </ul> 
+
+
+                          <h3><a href="#darts-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            What To Learn How To Play Darts?
+                          </h3>  
+                          <ul>
+                            <a href="../assets/images/darts/02.png" data-toggle="lightbox" data-gallery="darts-station" data-title="" class="col-3">
+                                <img src="../assets/images/darts/02.png" class="img-fluid">
+                              </a>
+							<a href="../assets/images/darts/01.png" data-toggle="lightbox" data-gallery="darts-station" data-title="" class="col-3">
+                                <img src="../assets/images/darts/01.png" class="img-fluid">
+                              </a> 
+			     <p>Rules For Darts	  
+                            <a href="../assets/manuals/Darts_Official_Rules.pdf"target="_blank" download=Darts_Official_Rules.pdf data-gallery="darts-station" class="col-3">
+                              <img src="../assets/images/icons/rules.png" class="img-fluid">
+				    </a></p>
+			      <p>Strategy For Darts 	  
+			       <a href="https://www.youtube.com/watch?v=Ck5i8CVEkJI&ab_channel=WatchMojo.com" data-toggle="lightbox" data-gallery="chesstable-station" lass="col-3">
+                              <img src="../assets/images/icons/youtube.png" class="img-fluid">
+			       </a></p>							
+				</ul> 
+
+                            <div id="bluray-section" ></div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <!-- darts End -->
+		  
+           <!-- Bluray Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Blu-ray Player
+                          </h2>
+                          <br>
+                          
+                            <div class="row">
+                              <a href="../assets/images/bluray/03.jpg" data-toggle="lightbox" data-gallery="bluray-station" data-title="LG BDP 570" class="col-3">
+                                <img src="../assets/images/bluray/03.jpg" class="img-fluid">
+                              </a>
+				<a href="../assets/images/bluray/02.jpg" data-toggle="lightbox" data-gallery="bluray-station" data-title="Showing The USB Port Right Side" class="col-3">
+                                <img src="../assets/images/bluray/02.jpg" class="img-fluid">
+                              </a>
+                            <a href="https://www.youtube.com/watch?v=twbl1r1VV88&ab_channel=J%26R" data-toggle="lightbox" data-gallery="bluray-station" lass="col-3">
+                              <img src="../assets/images/icons/youtube.png" class="img-fluid">
+                            </a>
+                           </div>
+                           <br/>
+						   
+			  <h3><a href="#bluray-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            What is Important about The Blu-ray Player?
+                          </h3>
+                          <ul>
+                              <li>Our Bluray plays Blu-ray™ Disc, BD-R/RE, DVD, DVD±R/RW, Audio CD, CD-R/RW	disc formats</li>
+                              <li>The player is also has a front USB 2.0 port for playing back media from your USB Drive</li>
+                              <li>Once connected to the network our player is capable of streaming Netflix®, Vudu™, YouTube™, Roxio® CinemaNow, Pandora®, Picasa™, AccuWeather® </li>							  
+                              <li>Our Bluray player is a donation from a member</li>
+			      <li>You can learn more about our Bluray Player by reading the Manual and looking over the Specifications Sheet</li>
+			  </ul>
+							  
+			   <h3><a href="#bluray-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            LG BDP 570™ Manual and Specifications
+                          </h3>
+			  </p>
+			    
+			  <p class="mb-12">		  
+                          <div class="row">
+				  
+                           <ul> <a href="../assets/manuals/BD572-N_BUSALLK_OM_MFL64940426.pdf"target="_blank" download=BD572-N_BUSALLK_OM_MFL64940426.pdf data-gallery="bluray-station" class="col-3">
+                                <img src="../assets/images/icons/manual.png" class="img-fluid">
+                               </a>
+			         <a href="../assets/manuals/LG _BDP_570_Specifications.pdf"target="_blank" download=LG _BDP_570_Specifications.pdf data-gallery="bluray-station" class="col-3">
+                                <img src="../assets/images/icons/specifications.png" class="img-fluid">
+			        </a>
+			   </ul>
+				
+                            <div id="tv-section" ></div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+		   
+            </div>		   
+          <!-- bluray End -->
+
+          <!-- TV Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Toshiba™ TV
+                          </h2>
+                          <br>
+                          
+                            <div class="row">
+                              <a href="../assets/images/tv/01.jpg" data-toggle="lightbox" data-gallery="tv-station" data-title="" class="col-3">
+                                <img src="../assets/images/tv/03.jpg" class="img-fluid">
+                              </a>
+				 <a href="../assets/images/tv/02.jpg" data-toggle="lightbox" data-gallery="tv-station" data-title="" class="col-3">
+                                <img src="../assets/images/tv/02.jpg" class="img-fluid">
+                              </a>
+                            <a href="https://www.youtube.com/watch?v=opf89ctIKEE&ab_channel=BabblingBoolean" data-toggle="lightbox" data-gallery="tv-station" lass="col-3">
+                              <img src="../assets/images/icons/youtube.png" class="img-fluid">
+                            </a>
+                           </div>
+                           <br/>
+						   
+						   <h3><a href="#tv-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            What is Important about The Toshiba™ TV?
+                          </h3>
+						  
+			   <a href="../assets/images/tv/04.jpg" data-toggle="lightbox" data-gallery="tv-station" data-title="" class="col-3">
+                                <img src="../assets/images/tv/04.jpg" class="img-fluid">
+                            </a>
+                          <ul>
+                              <li>Our Toshiba™ TV is a Fully Backlit 720P TFT display with a 60Hz Refresh Rate</li>
+                              <li>The TV is also has a side USB 1.0 port for playing back media from your USB Drive (Number 11 on the Diagram)</li>
+                              <li>The TV also has a VGA port labeled as PC Input</li>
+							  <li>The TV is a donation from a member who received it as a gift</li>
+                              <li>You can learn more about our Toshiba™ by reading the Manual and looking over the Specifications Sheet</li>			   
+                          </ul>  
+							  
+			   <h3><a href="#tv-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Toshiba™ TV Manual and Specifications
+                          </h3>
+			  </p>
+			  
+			  <p class="mb-12">		  
+                          <div class="row">
+				  
+                           <ul> <a href="../assets/manuals/32c120u.pdf" target="_blank" download=32c120u.pdf data-gallery="tv-station" class="col-3">
+                                <img src="../assets/images/icons/manual.png" class="img-fluid">
+                               </a>
+			         <a href="../assets/manuals/32c120uSpecifications.pdf"target="_blank" download=32c120uSpecifications.pdf data-gallery="tv-station" class="col-3">
+                                <img src="../assets/images/icons/specifications.png" class="img-fluid">
+			        </a></ul>
+				  </div>
+                                  <br/>
+				  
+                            <div id="stereo-section" ></div>
+                        </div>
+                  </div>
+                </div>
+	    </div>
+           </div>
+
+          </div> 
+          <!-- TV End -->
+
+          <!-- Stereo Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Sony™ Bluetooth™ Speaker
+                          </h2>
+                          <br>
+                          
+                            <div class="row">
+                              <a href="../assets/images/stereo/01.jpg" data-toggle="lightbox" data-gallery="stereo-station" data-title="" class="col-3">
+                                <img src="../assets/images/stereo/01.jpg" class="img-fluid">
+                              </a>
+			       <a href="../assets/images/stereo/02.jpg" data-toggle="lightbox" data-gallery="stereo-station" data-title="Rear Panel Connections" class="col-3">
+                                <img src="../assets/images/stereo/02.jpg" class="img-fluid">
+                              </a>
+                            <a href="https://www.youtube.com/watch?v=p9kojK-oBv0&ab_channel=masterjumpstyler1" data-toggle="lightbox" data-gallery="stereo-station" lass="col-3">
+                              <img src="../assets/images/icons/youtube.png" class="img-fluid">
+                            </a>
+                           </div>
+                           <br/>
+						   
+			  <h3><a href="#stereo-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            What is Important Sony™ Bluetooth™ Speaker?
+                          </h3>	 
+			    </p)			
+                          <ul>
+                              <li>Our Sony™ Bluetooth™ Speaker is a donation to our Games Room</li>
+                              <li>You can plug in any Analogue Audio device directly to our speaker</li>
+							  <li>If your Phone or devide is Bluetooth™ you can easily pair it directly to our speaker</li>
+                              <li>Our speaker is connected to the TV and Bluray Player to enhance the sound when using the TV</li>
+							  <li>The TV is a donation from a member who received it as a gift</li>
+                              <li>You can learn more about our Sony™ Bluetooth™ speaker by reading the Manual and looking over the Specifications Sheet</li>
+			   </ul>				
+                           <br/>  
+			    </p>			  
+			  <h3><a href="#stereo-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Sony™ Bluetooth™ Speaker Manual and Specifications
+                          </h3>
+			    </p>
+                           <ul> <a href="../assets/manuals/Manual Sony GTBX5 Wireless Speaker.pdf"target="_blank" download=Manual Sony GTBX5 Wireless Speaker.pdf data-gallery="stereo-station" class="col-3">
+                                <img src="../assets/images/icons/manual.png" class="img-fluid">
+                               </a>
+			       <a href="../assets/manuals/Sony_GTX-XB5_Specifications.pdf"target="_blank" download=Sony_GTX-XB5_Specifications.pdf data-gallery="stereo-station" class="col-3">
+                                <img src="../assets/images/icons/specifications.png" class="img-fluid">
+					           </a> 
+				</ul>
+		                   </br>
+                            <div id="stereo-section" ></div>
+                        </div>
+                  </div>
+               </div>
+              </div>
+
+            </div>          
+          <!-- Stereo End -->
+
+
+          <!--
+            
+          -->
+          
+         <!--
+           <div class="row">
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title">Cash deposits</p>
+                  <p class="mb-4">To start a blog, think of a topic about and first brainstorm party is ways to write details</p>
+                  <div id="cash-deposits-chart-legend" class="d-flex justify-content-center pt-3"></div>
+                  <canvas id="cash-deposits-chart"></canvas>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title">Total sales</p>
+                  <h1>$ 28835</h1>
+                  <h4>Gross sales over the years</h4>
+                  <p class="text-muted">Today, many people rely on computers to do homework, work, and create or store useful information. Therefore, it is important </p>
+                </div>
+                <img src="../assets/images/faces/face4.jpg" alt="image" >
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <p class="card-title">Recent Purchases</p>
+                  <div class="table-responsive">
+                    <table id="recent-purchases-listing" class="table">
+                      <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Status report</th>
+                            <th>Office</th>
+                            <th>Price</th>
+                            <th>Date</th>
+                            <th>Gross amount</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <td>Jeremy Ortega</td>
+                            <td>Levelled up</td>
+                            <td>Catalinaborough</td>
+                            <td>$790</td>
+                            <td>06 Jan 2018</td>
+                            <td>$2274253</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin Fisher</td>
+                            <td>Ui design completed</td>
+                            <td>East Mayra</td>
+                            <td>$23230</td>
+                            <td>18 Jul 2018</td>
+                            <td>$83127</td>
+                        </tr>
+                        <tr>
+                            <td>Emily Cunningham</td>
+                            <td>support</td>
+                            <td>Makennaton</td>
+                            <td>$939</td>
+                            <td>16 Jul 2018</td>
+                            <td>$29177</td>
+                        </tr>
+                        <tr>
+                            <td>Minnie Farmer</td>
+                            <td>support</td>
+                            <td>Agustinaborough</td>
+                            <td>$30</td>
+                            <td>30 Apr 2018</td>
+                            <td>$44617</td>
+                        </tr>
+                        <tr>
+                            <td>Betty Hunt</td>
+                            <td>Ui design not completed</td>
+                            <td>Lake Sandrafort</td>
+                            <td>$571</td>
+                            <td>25 Jun 2018</td>
+                            <td>$78952</td>
+                        </tr>
+                        <tr>
+                            <td>Myrtie Lambert</td>
+                            <td>Ui design completed</td>
+                            <td>Cassinbury</td>
+                            <td>$36</td>
+                            <td>05 Nov 2018</td>
+                            <td>$36422</td>
+                        </tr>
+                        <tr>
+                            <td>Jacob Kennedy</td>
+                            <td>New project</td>
+                            <td>Cletaborough</td>
+                            <td>$314</td>
+                            <td>12 Jul 2018</td>
+                            <td>$34167</td>
+                        </tr>
+                        <tr>
+                            <td>Ernest Wade</td>
+                            <td>Levelled up</td>
+                            <td>West Fidelmouth</td>
+                            <td>$484</td>
+                            <td>08 Sep 2018</td>
+                            <td>$50862</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+         -->
+          
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">2019 - 2020</span>
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block"><a href="https://github.com/nwmakerspace/nwmakerspace.github.io">Clone the source code of this website for free!</a></span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Build at <a href="http://neill-wycik.coop/">Neill Wycik</a> with<i class="mdi mdi-heart text-danger"></i> by <a href="https://sinamedialab.com">SinaMediaLab</a> based on <a href="https://demo.themewagon.com/preview/free-bootstrap-admin-dashboard-template-majestic-admin">Majestic Admin</a></span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="../assets/vendors/base/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="../assets/vendors/chart.js/Chart.min.js"></script>
+  <script src="../assets/vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="../assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../assets/js/off-canvas.js"></script>
+  <script src="../assets/js/hoverable-collapse.js"></script>
+  <script src="../assets/js/template.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../assets/js/dashboard.js"></script>
+  <script src="../assets/js/data-table.js"></script>
+  <script src="../assets/js/jquery.dataTables.js"></script>
+  <script src="../assets/js/dataTables.bootstrap4.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+  <script>
+  $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox({wrapping: false});
+  });
+  </script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
