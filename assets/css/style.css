@@ -21912,3 +21912,15 @@ width: 200px;
 .navbar .navbar-menu-wrapper {
 color: black;
 }
+
+.nav-item > h2{
+  padding: 15px;
+  vertical-align: middle;
+}
+
+.nav-item > img{
+  margin: 10px 10px 0 0px;
+  float: left;
+  width: 45px;
+  vertical-align: middle;
+}
