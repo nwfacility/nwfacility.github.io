@@ -21933,6 +21933,9 @@ color: black;
   vertical-align: middle;
 }
 
+.text-small{
+  font-size:12px;
+}
 
 figure figcaption {
     text-align: center;
