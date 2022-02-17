@@ -21960,6 +21960,10 @@ a.anchor {
   visibility: hidden;
 }
 
-.sidebar-icon-only .main-panel .navbar .navbar-menu-wrapper {
+.sidebar-icon-only .main-panel{
+  width:100%;
+}
+
+.navbar .navbar-menu-wrapper{
   width:100%;
 }
