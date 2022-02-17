@@ -21922,14 +21922,23 @@ color: black;
 }
 
 .nav-item > h2{
-  padding: 15px;
+  padding: 20px;
+  font-size:25px;
   vertical-align: middle;
 }
 
 .nav-item > img{
-  margin: 10px 10px 0 0px;
+  padding:5px;
+  margin: 15px 10px 0 0px;
   float: left;
-  width: 45px;
+  width: 35px;
+  vertical-align: middle;
+}
+
+img .facility-logo{
+  padding:0px;
+  margin: 0;
+  width: 55px;
   vertical-align: middle;
 }
 
