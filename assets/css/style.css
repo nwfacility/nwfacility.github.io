@@ -21907,6 +21907,7 @@ dl li {
 .front-card{
 height:150px;
 overflow:hidden;
+
 }
 
 .card-icon{
@@ -21957,4 +21958,8 @@ a.anchor {
   position: relative;
   top: -100px;
   visibility: hidden;
+}
+
+.sidebar-icon-only .main-panel{
+  width:100%;
 }
