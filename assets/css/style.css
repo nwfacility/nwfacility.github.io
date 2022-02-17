@@ -21967,3 +21967,7 @@ a.anchor {
 .navbar .navbar-menu-wrapper{
   width:100%;
 }
+
+.sidebar-icon-only .navbar .navbar-menu-wrapper {
+  width:100%;
+}
