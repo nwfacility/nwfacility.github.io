@@ -21906,7 +21906,8 @@ dl li {
 
 .col-md-3 .card .p-3{
 height:150px;
-width: 200px;
+width: 100px;
+object-fit: cover;
 }
 
 .navbar .navbar-menu-wrapper {
@@ -21923,4 +21924,12 @@ color: black;
   float: left;
   width: 45px;
   vertical-align: middle;
+}
+
+
+figure figcaption {
+    text-align: center;
+}
+.profile{
+  padding: 0px;
 }
