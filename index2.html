@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="all" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Maker Space</title>
+  </head>
+  <body>
+
+  <div class="container">
+    <nav class="">
+        <ul class="navbar-nav mr-lg-12">
+              <li class="nav-item nav-search d-lg-block w-100">
+                <!--Page title and back Navigation-->  
+                <img src="assets/images/icons/back.png" class="img-fluid box" onclick="location.href='../index.html';" title="Back to Neill-Wycik Facilities">
+                  <h2>Maker Space</h2>
+                <!--/Page title and back Navigation-->  
+              </li>
+            </ul>
+    </nav>
+    
+     <!-- Box Grid Start -->
+            <div class="row" style="display:flex; flex-wrap:wrap;" >
+                <div class="col-6 col-md-3">
+                <div class="card p-3 front-card box">
+                    <div class="d-flex flex-row mb-3 box-in"><img src="assets/images/icons/makerspace.png" class= "card-icon">
+                        <div class="d-flex flex-column ml-2">
+                            <span>Maker Space <a href="https://www.youtube.com/watch?v=W2fKz_L2-v4" data-toggle="lightbox"><i class="fa-brands fa-youtube" style="color:red"></i></a></span>
+                            <span class="text-black-50 text-small"> basement</span>
+                        </div>
+                    </div>
+                    <h6>
+                        <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                                  Overview  
+                    </h6>
+                    <div class="d-flex justify-content-between install mt-3"><span></span><span class="text-primary"></span></div>
+                </div>
+            </div>
+       
+          
+  <!-- Box Grid End -->
+
+</div>
+    <!--  jQuery and Bootstrap ekko-lightbox Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <!-- /jQuery and Bootstrap  Bundle (includes Popper) -->
+
+    <!--Ekko Lightbox-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js" integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    </script>
+    <script>
+        $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+          event.preventDefault();
+          $(this).ekkoLightbox({wrapping: false});
+        });
+    </script>
+    <!--/Ekko Lightbox-->
+  </body>
+</html>
