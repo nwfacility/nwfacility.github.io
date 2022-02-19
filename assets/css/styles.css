@@ -114,3 +114,9 @@ html {
   .pointer {
     cursor: pointer;
   }
+
+  a.anchor {
+    position: relative;
+    top: -200px;
+    visibility: hidden;
+  }
