@@ -298,9 +298,14 @@
                 $('.container').addClass('wait');
             });
         });
-
-        
     </script>
+<script>
+    $(document).ready(function(){
+            $('.navbar-nav>li>a').on('click', function(){
+                $('.navbar-collapse').collapse('hide');
+            });
+     });
+</script>
     <!--/Clickable box-->
     
   </body>
