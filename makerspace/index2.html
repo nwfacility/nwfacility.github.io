@@ -15,24 +15,35 @@
     <title>Maker Space</title>
   </head>
   <body>
-
-  <div class="container">
-    <nav class="sticky-top navbar-light bg-white">
-        <ul class="navbar-nav mr-lg-12">
-              <li class="nav-item nav-search d-lg-block w-100">
-                <!--Page title and back Navigation-->  
-                <img src="../assets/images/icons/back.png" class="img-fluid box" onclick="location.href='../index.html';" title="Back to Neill-Wycik Facilities">
-                  <h2>Maker Space</h2>
-                <!--/Page title and back Navigation-->  
+    <div class="container">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-light bg-white top-nav">
+        <img src="../assets/images/icons/back.png" class="img-fluid box" onclick="location.href='../index.html';" title="Back to Neill-Wycik Facilities" width="20">
+        <a class="navbar-brand" href="#">Maker Space</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
               </li>
             </ul>
+          </div>
     </nav>
+
     
      <!-- Box Grid Start -->
             <div class="row" style="display:flex; flex-wrap:wrap;" >
                 
                 <!-- Main Card-->
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="card p-3 front-card box">
                         <div class="d-flex flex-row mb-3 box-in"><img src="../assets/images/icons/makerspace.png" class= "card-icon">
                             <div class="d-flex flex-column ml-2">
@@ -51,7 +62,7 @@
                 </div>
                 <!-- /Main Card-->
                 <!-- Quiz Card-->
-                <div class="col-6 col-md-3">
+                <div class="col-6 col-md-4 col-lg-3">
                     <div class="card p-3 front-card box">
                         <div class="d-flex flex-row mb-3 box-in"><img src="../assets/images/icons/quiz.png" class= "card-icon">
                             <div class="d-flex flex-column ml-2">
@@ -66,23 +77,25 @@
                     </div>
                 </div>
                 <!-- /Quiz Card-->
-                <!-- Booking Card-->
-                <div class="col-6 col-md-3" onclick="location.href='https://google.com;">
+                <!-- Orientation Card-->
+                <div class="col-6 col-md-4 col-lg-3" onclick="location.href='https://google.com;">
                     <div class="card p-3 front-card box">
                         <div class="d-flex flex-row mb-3 box-in"><img src="../assets/images/icons/orientation.png" class= "card-icon">
                             <div class="d-flex flex-column ml-2">
-                                <span> Book Orientation </span><i class="fa-solid fa-envelope"></i>
+                                <span> Book Orientation </span>
                                 <span class="text-black-50 text-small"><i class="fa-solid fa-location-dot"></i> Basement</span>
                             </div>
                         </div>
                         <h6>
-                            Click here and email quiz result to book for orientation!
+                            <i class="fa-solid fa-envelope"></i> Click here and email quiz result to book for orientation!
                         </h6>
                         <div class="d-flex justify-content-between install mt-3"><span></span><span class="text-primary"></span></div>
                     </div>
                 </div>
-                <!-- /Rules Card-->
-                <div class="col-6 col-md-3" onclick="location.href='https://app.condocontrol.com/login;" title="Book with Condo Control" >
+                <!-- /Orientation Card-->
+
+                <!-- Booking Card-->
+                <div class="col-6 col-md-4 col-lg-3" onclick="location.href='https://app.condocontrol.com/login;" title="Book with Condo Control" >
                     <div class="card p-3 front-card box">
                         <div class="d-flex flex-row mb-3 box-in"><img src="../assets/images/icons/booking.png" class= "card-icon">
                             <div class="d-flex flex-column ml-2">
@@ -96,12 +109,12 @@
                         <div class="d-flex justify-content-between install mt-3"><span></span><span class="text-primary"></span></div>
                     </div>
                 </div>
-                <!-- /Rules Card-->
-
+                <!-- /Booking Card-->
+                <div class="w-100"></div>
 
                 <!-- Manager Card-->
-                <div class="col-12 col-md-6">
-                    <div class="card p-3 content-card box">
+                <div class="col-12 col-md-6 ">
+                    <div class="card p-3 box content-card">
                         <div class="d-flex flex-row mb-3 box-in">
                             <div class="d-flex flex-column ml-2">
                                 <span><i class="fa-solid fa-user"></i> Managers</span>
@@ -113,7 +126,7 @@
 
                         <!--manager profiles-->
                                 <div class="row">
-                                    <div class="col-6 col-md-3">
+                                    <div class="col-6 col-md-6  col-lg-3">
                                     <figure class="figure profile">
                                         <img src="../assets/images/manager/ghassem.jpg" class="figure-img img-fluid rounded-circle" data-toggle="lightbox" alt="Ghassem">
                                         <figcaption class="figure-caption" >
@@ -122,7 +135,7 @@
                                     </figure>
                                     </div>
 
-                                    <div class="col-6 col-md-3">
+                                    <div class="col-6 col-md-6  col-lg-3">
                                     <figure class="figure profile">
                                         <img src="../assets/images/manager/ali.jpg" class="figure-img img-fluid rounded-circle" data-toggle="lightbox" alt="Ali">
                                         <figcaption class="figure-caption" >
@@ -131,7 +144,7 @@
                                     </figure>
                                     </div>
 
-                                    <div class="col-6 col-md-3">
+                                    <div class="col-6 col-md-6  col-lg-3">
                                     <figure class="figure profile">
                                         <img src="../assets/images/manager/user.png" class="figure-img img-fluid rounded-circle" data-toggle="lightbox" alt="Kamal">
                                         <figcaption class="figure-caption" >
@@ -140,7 +153,7 @@
                                     </figure>
                                     </div>
 
-                                    <div class="col-6 col-md-3">
+                                    <div class="col-6 col-md-6 col-lg-3">
                                     <figure class="figure profile">
                                         <img src="../assets/images/manager/user.png" class="figure-img img-fluid rounded-circle" data-toggle="lightbox" alt="Mitchel">
                                         <figcaption class="figure-caption" >
