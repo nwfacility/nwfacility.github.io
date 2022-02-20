@@ -1,29 +1,4 @@
-@media (min-width:356px) {
-  .card-columns {
-    column-count: 3;
-  }
-}
 
-@media (min-width:576px) {
-  .card-columns {
-    column-count: 3;
-  }
-}
-@media (min-width:768px) {
-  .card-columns {
-    column-count: 6;
-  }
-}
-@media (min-width:992px) {
-  .card-columns {
-    column-count: 5;
-  }
-}
-@media (min-width:1200px) {
-  .card-columns {
-    column-count: 6;
-  }
-}
 
 html {
   scroll-behavior: smooth;
@@ -44,8 +19,8 @@ html {
   }
   
   .content-card{
-    height:auto;
-    overflow: auto;
+    height:400px;
+    overflow: scroll;
     margin:0;
   }
 
@@ -91,7 +66,7 @@ html {
     padding:5px;
     margin: 15px 10px 0 0px;
     float: left;
-    width: 50px;
+    width: 30px;
     vertical-align: middle;
   }
   
@@ -141,4 +116,8 @@ html {
     position: relative;
     top: -210px;
     visibility: hidden;
+  }
+
+  .profile > img {
+    margin-bottom: 2px;
   }
