@@ -19,7 +19,7 @@ html {
   }
   
   .content-card{
-    height:500px;
+    height:700px;
     overflow: scroll;
     margin:0;
   }
@@ -122,9 +122,15 @@ html {
     margin-bottom: 2px;
   }
 
-  .text-medium{
+  .text-medium, .text-medium > ul{
     margin-top:5px;
     margin-bottom: 0px;
     font-size:15px;
     color: rgb(100, 100, 100);
+    text-align: justify;
+  }
+
+ 
+  .content-title{
+    font-size: 20px;
   }
