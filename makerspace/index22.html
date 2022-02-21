@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>MakerSpace</title>
+  <!-- plugins:css -->
+  <!-- <link rel="stylesheet" href="../assets/vendors/mdi/css/materialdesignicons.min.css"> -->
+  <link href="https://cdn.materialdesignicons.com/4.5.95/css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" media="all" rel="stylesheet" type="text/css" />
+
+
+
+  <link rel="stylesheet" href="../assets/vendors/base/vendor.bundle.base.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <link rel="stylesheet" href="../assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css">
+  <!-- End plugin css for this page -->
+  <!--lightbox-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../assets/images/favicon.png" />
+</head>
+<body class="sidebar-icon-only">
+  <div class="container-scroller">
+    <!-- partial:partials/_navbar.html -->
+    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row" >
+      <div class="navbar-brand-wrapper d-flex justify-content-center">
+        <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">  
+          <a class="navbar-brand brand-logo" href="index.html"><img src="../assets/images/logo.svg" alt="logo"/></a>
+          <a class="navbar-brand brand-logo-mini" href="index.html"><img src="../assets/images/logo-mini.svg" alt="logo"/></a>
+          <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize">
+            <span class="mdi mdi-sort-variant"></span>
+          </button>
+        </div>  
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end">
+          <ul class="navbar-nav mr-lg-4 w-100">
+              <li class="nav-item nav-search d-lg-block w-100 visible-xs visible-sm">
+                <img src="../assets/images/icons/back.png" class="img-fluid" onclick="location.href='../index.html';">
+                <h2>Maker Space</h2>
+              </li>
+            </ul>
+        <ul class="navbar-nav navbar-nav-right">
+          <!--  
+          <button type="button" class="btn btn-light bg-white btn-icon mr-3 mt-2 mt-xl-0">
+                    <i class="mdi mdi-download text-muted"></i>
+                  </button>
+          -->
+          
+        </ul>
+        <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="mdi mdi-menu"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#overview">
+              <i class="mdi mdi-home menu-icon"></i>
+              <span class="menu-title">Overview</span> 
+            </a>
+          </li>
+
+          
+          <li class="nav-item">
+            <a class="nav-link" href="#manager">
+              <i class="mdi mdi-account menu-icon"></i>
+              <span class="menu-title">Facility Managers</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#safety">
+              <i class="mdi mdi-alert menu-icon"></i>
+              <span class="menu-title">Safety Guidelines</span>
+            </a>
+          </li>
+          <!--
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
+              <i class="mdi mdi-circle-outline menu-icon"></i>
+              <span class="menu-title">With subs</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="ui-basic">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="#">sub1</a></li>
+                <li class="nav-item"> <a class="nav-link" href="#">sub2</a></li>
+              </ul>
+            </div>
+          </li>
+          -->
+          <li class="nav-item">
+            <a class="nav-link" href="#ground-rules">
+              <i class="mdi mdi-view-headline menu-icon"></i>
+              <span class="menu-title">Ground Rules</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#project-storage">
+              <i class="mdi mdi-cube-outline menu-icon"></i>
+              <span class="menu-title">Project Storage</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#training">
+              <i class="mdi mdi-library-books menu-icon"></i>
+              <span class="menu-title">Training</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#3dprinter-section">
+              <i class="mdi mdi-printer-3d menu-icon"></i>
+              <span class="menu-title">3D Printer</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#soldering-section">
+              <i class="mdi mdi-soldering-iron menu-icon"></i>
+              <span class="menu-title">Soldering Tools</span>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#drill-section">
+              <i class="mdi mdi-screw-lag menu-icon"></i>
+              <span class="menu-title">Drilling Tools</span>
+            </a>
+          </li>
+
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+
+        <!-- Notification Start -->
+            <div class="row" id="proBanner">
+                
+                <div class="col-md-12 grid-margin">
+                    
+                  <div class="card bg-gradient-primary border-0">
+                    <button id="bannerClose" class="btn border-0 p-0" style="text-align: right;margin: 5px;">
+                        <i class="mdi mdi-close text-white"></i>
+                      </button>
+                    <div class="card-body py-3 px-4 d-flex align-items-center justify-content-between flex-wrap">
+                
+                      <p class="mb-0 text-white font-weight-medium" style="padding-bottom: 10px;"><span style="font-size:26px;">Important Notes</span>
+                        <br/>
+                        <br>
+                        Please follow the building's COVID-19 Mask policies for our community's safety (<mark class="bg-warning text-white">Wearing a mask in the facility is mandatory even if you are the only person using it</mark>)
+                        <br/>To use the facility you have to complete the following steps:<br/>
+                        <b>(1)</b> Study the materials and take the quiz with satisfactory results - <mark class="bg-warning text-white">Do NOT book for orientation before completing the quiz. Otherwise, we ask you to return another day for orientation</mark><br/>
+                        <b>(2)</b> Book an appointment for orientation session <br>
+                        <b>(3)</b> You are responsible to learn how to use the devices in the facility. The facility managers are <b>NOT responsible</b> for training or adjusting a device (e.g. leveling the 3D printer) for your use. If you are not sure how to use or adjust a device, please do not use it before carefully studying the manuals and watching the videos.
+                    </p>
+                      <br>
+      
+                      <div class="d-flex">
+                      
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe83t_M6EZKWlZH2jdci8ix8bj0tVO1BuPutVWuteEPVDmSbw/viewform?vc=0&c=0&w=1" target="_blank" class="btn btn-outline-light mr-2">Take the Quiz</a>
+                        <a href="https://doodle.com/poll/u6mc5y3zgzq7aqqg" target="_blank" class="btn btn-outline-light mr-2 bg-gradient-danger border-0 disabled">Book Orientation Session</a>
+                        
+                      </div>
+                      
+                    </div>
+                    <div id="overview" ></div>
+                  </div>
+                </div>
+              </div>
+          <!-- Notification End -->
+        
+
+          <!-- Overview Start -->
+          <div class="mr-md mr-xl">
+              <div class="row">
+                  <div class="col-md-12 grid-margin stretch-card">
+                      <div class="card">
+                          <div class="card-body">
+                              <h2>
+                                  <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                                  Overview  <a href="https://www.youtube.com/watch?v=W2fKz_L2-v4" data-toggle="lightbox"><i class="fa-brands fa-youtube" style="color:red"></i></a> 
+                              </h2>
+                          <p class="mb-12">The Neill-Wycik Makerspace is an engineering design space that allow members of the co-op to design and create their own projects that involl1e the use of electronics, computer aided design software (also known as CAD), and 3D printed ABS or PLA material. Due to the nature of the components inside the space, both in terms of cost and safety, it is necessary to lay out the ground rules for usage of the space to ensure. proper training of students who wish to use the space and minimize the risk of injuries and property damage as a result. <br>We support a maker culture where:</p>
+                          
+                            <ul>
+                                <li>Everyone has <mark class="bg-warning text-white">responsibility for learning the right way of using devices</mark></li>
+                                <li>Everyone shares <mark class="bg-warning text-white">responsibility for safety</mark></li>
+                                <li>We <mark class="bg-warning text-white">support one another</mark> and are receptive to feedback.</li>
+                                <li>Innovation is encouraged</li>
+                                <li>Positive experiences are created</li>
+                           </ul>
+
+                          <p class="mb-12">
+                          This is a space to have FUN, LEARN, be PRODUCTIVE, and work SAFELY. Please adhere to posted safety and equipment guidelines, report damaged or unclean equipment, and ask questions.
+                          </p>
+                          <div class="row justify-content-center">
+                              <div class="col-md-12">
+                                  <div class="row">
+                                      <a href="../assets/images/makerspace/general/01.jpg" data-toggle="lightbox" data-gallery="makerspace" class="col-3">
+                                        <img src="../assets/images/makerspace/general/01.jpg" class="img-fluid">
+                                      </a>
+                                      <a href="../assets/images/makerspace/general/02.jpg" data-toggle="lightbox" data-gallery="makerspace" class="col-3">
+                                          <img src="../assets/images/makerspace/general/02.jpg" class="img-fluid">
+                                      </a>
+                                      <a href="../assets/images/makerspace/general/03.jpg" data-toggle="lightbox" data-gallery="makerspace" data-title="Safety equipments" class="col-3">
+                                          <img src="../assets/images/makerspace/general/03.jpg" class="img-fluid">
+                                      </a>
+                                      
+                                  </div>
+                                  <br>
+                              </div>
+                          </div>
+                          <div id="manager" ></div>
+                          
+                        </div>
+                          
+                    </div>
+                  </div>
+              </div>
+              
+          </div>
+          <!-- Overview End -->
+
+                     <!-- Manager Start -->
+                     <div class="mr-md mr-xl">
+                      <div  class="row">
+                          <div class="col-md-12 grid-margin stretch-card">
+                              <div class="card">
+                                  <div class="card-body">
+                                    <h2>
+                                      <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                                      Facility Managers
+                                    </h2>
+                                    <br>
+                                    <!-- Profiles -->
+                                      <div class="row">
+                                        <div class="col-6 col-md-3">
+                                          <figure class="figure profile">
+                                            <img src="../assets/images/manager/ghassem.jpg" class="figure-img img-fluid rounded-circle" alt="Ghassem">
+                                            <figcaption class="figure-caption" >
+                                              <a href="https://ghassem.com" target="_blank">Ghassem</a>
+                                            </figcaption>
+                                          </figure>
+                                        </div>
+
+                                        <div class="col-6 col-md-3">
+                                          <figure class="figure profile">
+                                            <img src="../assets/images/manager/ali.jpg" class="figure-img img-fluid rounded-circle" alt="Ali">
+                                            <figcaption class="figure-caption" >
+                                              <a href="https://www.linkedin.com/in/mohammadali-tofighi-58949a2a/" target="_blank">Ali</a>
+                                            </figcaption>
+                                          </figure>
+                                        </div>
+
+                                        <div class="col-6 col-md-3">
+                                          <figure class="figure profile">
+                                            <img src="../assets/images/manager/user.png" class="figure-img img-fluid rounded-circle" alt="Kamal">
+                                            <figcaption class="figure-caption" >
+                                              <a href="#">Kamal</a>
+                                            </figcaption>
+                                          </figure>
+                                        </div>
+
+                                        <div class="col-6 col-md-3">
+                                          <figure class="figure profile">
+                                            <img src="../assets/images/manager/user.png" class="figure-img img-fluid rounded-circle" alt="Mitchel">
+                                            <figcaption class="figure-caption" >
+                                              <a href="#">Mitchel</a>
+                                            </figcaption>
+                                          </figure>
+                                        </div>
+                                        
+                                     </div>
+                                     <!-- /Profiles -->          
+                                  </div>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                    <!-- Manager End -->
+
+          <!-- Safety Start -->
+          <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Safety Guidelines
+                          </h2>
+                          <br>
+                          <h3>COVID-19 Policy</h3>
+                          <ul>
+                            <li>Please follow the building's COVID-19 Mask policies for our community's safety</li>
+                            <li> 
+                              Wearing a mask in the facility is mandatory even if you are the only person using it
+                            </li>
+                        
+                          </ul>
+
+                          <h3>Report all Injuries/Incidents</h3>
+                          <ul>
+                            <li>Immediately report ALL accidents, injuries, or incidents to <b>security at front desk</b>.</li>
+                            <li>Immediately discontinue use of the tool(s) or equipment if it becomes unsafe, damaged, or is not working properly.</li>
+                            <li>Notify a Makerspace Manager or Assistant Manager.</li>
+                          </ul>
+                         
+
+                         <h3>Safe Conduct Agreement</h3>
+                         <ul>
+                           <li>Use the space and equipment safely and leave the space and equipment in clean and working condition.</li>
+                           <li>Do not use a device if you are not sure how to use it.</li>
+                           <li>Operation of the 3D Printers is restricted. Please note the manual.</li>
+                           <li>Abide by SAC, safety, and fire regulations and comply with the rules and regulations of the equipment, whether posted or otherwise imposed by SAC.</li>
+                         </ul>
+
+                         <h3>Prepare</h3>
+                         <ul>
+                           <li>Safety is your top priority when using the Makerspace. If you are not sure what to do, ask.</li>
+                           <li>Be aware of locations of first aid, fire, and safety equipment</li>
+                           <li>Never use a tool unless you’ve been trained to use it safely</li>
+                           <li>Use a step stool to reach extension cords or tools which are out of reach. Do not climb on tables or chairs to reach for something</li>
+                           <li>Do not work when tired or in a hurry</li>
+                           <li>Do not cause a distraction, fool around, or startle anyone while either one of you is using a tool</li>
+                           <li>Think through the entire job before starting. Prepare prints or drawings with all dimensions and specifications prior to submitting your job to a Makerspace Makerspace Manager or Assistant.</li>
+                         </ul>
+
+                         <h3>Use Protective Gear & Dress Right</h3>
+                         <ul>
+                           <li>Do not wear loose-fitting clothing around moving or rotating machinery.</li>
+                           <li>Remove ties, jewelry, lanyards, etc., especially around moving or rotating machinery.</li>
+                           <li>Tie back long hair.</li>
+                           <li>Wear suitable gloves when handling hot objects or sharp-edged items.</li>
+                         </ul>
+
+                         <h3>Use Tools Correctly</h3>
+                           <ul>
+                             <li>Use tools how they are designed to be used.</li>
+                             <li>Never use a broken tool. Report any broken tools or machinery to a Makerspace Technician immediately.</li>
+                             <li>Do not remove tools from the Makerspace.</li>
+                             <li>Never walk away from a tool that is still on.</li>
+                             <li>Never tamper with a tool’s safety features. Operate machinery according to recommended procedures and with safety guards in place, as applicable.</li>
+                           </ul>
+                          
+                          <h3>Food and Drinks</h3>
+                          <ul>
+                            <li><mark class="bg-warning text-white">Drink and food are NOT permitted.</mark></li>
+                          </ul>
+
+                          <h3>First Aid Equipments</h3>
+                          <ul>
+                            <li>
+                              There is a first aid equipment kit and eyewash on the wall of the room.
+                            </li>
+                          </ul>
+                          <br>
+                          <div class="row justify-content-center">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <a href="../assets/images/safety/01.jpg" data-toggle="lightbox" data-gallery="safety" class="col-3">
+                                      <img src="../assets/images/safety/01.jpg" class="img-fluid">
+                                    </a>
+                                    <a href="../assets/images/safety/02.jpg" data-toggle="lightbox" data-gallery="safety" class="col-3">
+                                        <img src="../assets/images/safety/02.jpg" class="img-fluid">
+                                    </a>
+                                </div>
+                                <br>
+                            </div>
+                        </div>
+
+                        </div>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+          <!-- Safety End -->
+
+           <!-- Training Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            <a id="training" class="anchor"></a>Training
+                          </h2>
+                          <br>
+                          <p class="mb-12">Before any member can utilize the space, there will be a requirement for them to undergo an orientation session with either the manager of the space or either of the assistant managers. This training will include, but not be limited to:</p>
+                            <ul>
+                              <li>The locations and proper usage of the Emergency Supplies (First Aid Kits and Eyewash Station) inside of the space</li>
+                              <li>An overview of the procedural rules of the space (including occupancy limits for the space, cleaning requirements of the space, sign in procedures, guest policy, etc ... )</li>
+                              <li>Training on the usage of the various tools available inside of the space, particularly the soldering irons and 3D printer, and:</li>
+                              <li>A practical test of said training in the form of a basic project (a working LED light switch for the soldering and printing an alphabet letter for the 3D printer)</li>
+                            </ul>
+
+                        </div>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+          <!-- Training End -->
+
+          <!-- Rules Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            <a id="ground-rules" class="anchor"></a>
+                            Ground Rules
+                          </h2>
+                          <br>
+                          <p class="mb-12">The ground rules for the Makerspace shall be as follows. Violation of any of the rules of the space will lead to loss of usage privileges:</p>
+                            <ul>
+                              <li>The occupancy limit of the Makerspace at any given time shall be llmited to 6 persons.</li>
+                              <li>No untrained members or guests are allowed into the Makerspace under any circumstances.</li>
+                              <li>No food or drink is allowed int the Makerspace under any circumstances.</li>
+                              <li>All users of the space must both sign into the space when they enter and sign out of the space when they leave.</li>
+                              <li>Removal of any electrical components from the space (ie: LEDs, perfboard, switches, etc.) must be recorded by the manager or an assistant manager of the space.</li>
+                              <li>Removal of any other items from the space, including any type of solder, is prohibited.</li>
+                              <li>Any and all damages or emergencies must immediately be reported to both security and the Facility Manager/Assistants.
+                              </li>
+                            </ul>
+              
+                            
+                        </div>
+                  </div>
+                </div>
+            </div>
+            
+          </div>
+          <!-- Rules End -->
+
+
+           <!-- 3D printer Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            <a id="3dprinter-section" class="anchor"></a>
+                            3D Printer <a href="https://www.youtube.com/watch?v=jZu4zTc8HJE" data-toggle="lightbox"><i class="fa-brands fa-youtube" style="color:red"></i></a> 
+                          </h2>
+                          <br>
+                          <!-- Profiles -->
+                          <div class="row">
+                            <div class="col-6 col-md-3">
+                              <figure class="figure profile">
+                                <a href="../assets/images/makerspace/3dprinter/01.jpg" data-toggle="lightbox" data-gallery="3dprinter" class="col-3">
+                                  <img src="../assets/images/makerspace/3dprinter/01.jpg" class="figure-img img-fluid" alt="3dprinter">
+                                </a>
+                                <figcaption class="figure-caption" >
+                                  
+                                  <a href="../assets/manuals/Creator%20Pro%20User%20Guide-English%20for%20Print.pdf" target="_blank">Manual <i class="fa-solid fa-file-arrow-down"></i> </a> & <a href="../assets/manuals/Creator%20Pro%20-%20flashforge.pdf" target="_blank"> Specifications <i class="fa-solid fa-file-arrow-down"></i></a>
+                                </figcaption>
+                              </figure>
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                              <figure class="figure profile">
+                                <a href="../assets/images/makerspace/3dprinter/02.jpg" data-toggle="lightbox" data-gallery="3dprinter" class="col-3">
+                                  <img src="../assets/images/makerspace/3dprinter/02.jpg" class="figure-img img-fluid" alt="3dprinter">
+                                </a>
+                                <figcaption class="figure-caption" >
+                                  Computer
+                                </figcaption>
+                              </figure>
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                              <figure class="figure profile">
+                                <a href="../assets/images/makerspace/3dprinter/03.jpg" data-toggle="lightbox" data-gallery="3dprinter" class="col-3">
+                                  <img src="../assets/images/makerspace/3dprinter/03.jpg" class="figure-img img-fluid" alt="3dprinter">
+                                </a>
+                                <figcaption class="figure-caption" >
+                                  Setup
+                                </figcaption>
+                              </figure>
+                            </div>
+
+                            <div class="col-6 col-md-3">
+                              <figure class="figure profile">
+                                <a href="../assets/images/makerspace/3dprinter/04.jpg" data-toggle="lightbox" data-gallery="3dprinter" class="col-3">
+                                  <img src="../assets/images/makerspace/3dprinter/04.jpg" class="figure-img img-fluid" alt="3dprinter">
+                                </a>
+                                <figcaption class="figure-caption" >
+                                  Maximum Build Volume
+                                </figcaption>
+                              </figure>
+                            </div>
+                            
+                         </div>
+                         <!-- /Profiles -->
+
+                         <h3><i class="fa-solid fa-circle-info"></i>
+                          Getting Started 
+                          <a href="https://www.youtube.com/watch?v=lPbMDegy4_4" data-toggle="lightbox"><i class="fa-brands fa-youtube" style="color:red"></i></a> 
+                         </h3>
+
+                        
+
+                          <p class="mb-12">
+                            3D printer is available for making three-dimensional objects in filament using a design uploaded from a digital file. Prior to using the 3D printer, you must complete the mandatory Orientation Quiz, A Code of Conduct and Safety Quiz. 3D printing services are offered in a non-commercial capacity. Mass quantity printouts will be referred to a commercial company.
+                            The following rules must be followed with respect to using the 3D printer:
+                          </p>
+                          <h3><i class="fa-solid fa-circle-info"></i>
+                            Setting Up
+                            <a href="https://www.youtube.com/watch?v=QfzSRN17ZVM" data-toggle="lightbox"><i class="fa-brands fa-youtube" style="color:red"></i></a> 
+                           </h3>
+                          <ul>
+                            <li>
+                              Before use, confirmation is needed that there is enough ABS or PLA to print the required part
+                            </li>
+                            <li>
+                              <mark class="bg-warning text-white">All projects to be printed must receive approval before 7 PM (send your file to ghassem@gmail.com for approval)</mark>
+                            </li>
+                            <li>
+                              <mark class="bg-warning text-white">All usage of the 3D printer must be approved before printing is stared by a facility manager / assistant manager. Running the machine without such approval is prohibited</mark>
+                            </li>
+                            <li>
+                              Any instance of smoke emitting from the machine must immediately be reported to both security and facility managemer
+                            </li>
+                            <li>
+                              Makerspace 3D printer may be used only for lawful purposes and Neill-Wycik Makerspace reserves the right to refuse any print request. The printers cannot be used to create material that is:
+                              <ul>
+                                <li>
+                                  Prohibited by provincial or federal law.
+                                </li>
+                                <li>
+                                  Unsafe, harmful, dangerous, or poses an immediate threat to the well-being of others.
+                                </li>
+                                <li>
+                                  In violation of the intellectual property rights of others. For example, reproducing 
+                                </li>
+                                <li>
+                                  material that is subject to copyright, patent, or trademark protection.
+                                </li>
+                                <li>
+                                  A weapon, in part or whole, or any object that can be mistaken for a weapon.
+                                </li>
+                                <li>
+                                  Too large for the printer.
+                                </li>
+                                <li>
+                                  Lewd, malicious, or otherwise unsuitable for creating a welcoming and inclusive public space.
+                                </li>
+
+                              </ul>
+                            </li>
+                          </ul>
+                          <h3>
+                            <a href="#3dprinter-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            What is 3D printing?
+                        
+                          </h3>
+                                
+                          <p class="mb-12">
+                                3D printing is a process of taking a digital 3D design and turning that into a physical object. This is done using a 3D printer which manufactures the physical object using plastic or other material. The Makerspace has a 3D printers (Flashforge Creator Pro) which use plastic filament.
+                                There are two common types of plastic filaments used in 3D printing, ABS and PLA. Think of this as the printer “ink” that forms your object. Filaments come in a variety of colours. The 3D printers in Makerspace use PLA material derived from biodegradable resources such as corn starch; this material has less fumes.
+                                Before a 3D model can be printed, it is sliced into layers. Each layer is then traced onto the build plate by the printer; once one layer is complete, the build plate is lowered and the next layer is added on top of the previous one.
+                          </p>
+                          
+                          <h3>
+                            <a href="#3dprinter-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Where do I start?
+                          </h3>
+                                
+                          <p class="mb-12">
+                                If you are new to 3D printing and wish to learn the basics, start with Tinkercad. It has easy, interactive tutorials which teach the basics of 3D modeling.
+
+                                How do I use the 3D printer?
+
+                                You will be required to complete a one-time mandatory 3D Printing orientation and sign a Makerspace User Agreement. Once you have passed the training with 100% and completed the User Agreement you can submit your jobs to a Makerspace Manager or Assistant Manager (Email).You will be asked to complete a 3D Design Checklist and review your submission.
+                                <h3>
+                                  <a href="#3dprinter-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                                What can I print?
+                                </h3>
+                                <p class="mb-12">
+                                While the possibilities may seem endless, there are some limitations around printing. Some designs may be too large for our printer, or may not suitable for printing with PLA material.
+                                The Makerspace equipment may be used only for lawful purposes. Equipment cannot be used to create above-mentioned material.
+                              </p>
+                              <h3>
+                                <a href="#3dprinter-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                              Finding a Design
+                              </h3>
+                              <p class="mb-12">
+                                All objects printed from a 3D printer start off with a design created using Computer Aided Design (CAD) software. You can either find a design that is print-ready or you can design your own.
+                              </p>
+                              <h3><a href="#3dprinter-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                                Create your own design
+                              </h3>
+                              <p class="mb-12">
+                                If you are creating your own design, choose a modeling software based on whether or not your model is solid or mesh. Examples of CAD software suitable for 3D printing include:
+                              </p>
+                              <ul>
+                                <li>Onshape</li> 
+                                <li>Tinkercad (good choice for beginners)</li>
+                                <li>Autodesk Fusion 360</li>
+                                <li>GitHub</li>
+                                <li>GrabCAD</li>
+                                <li>SolidWorks</li>
+                                <li>Find a design</li>
+                              </ul>
+                              <p class="mb-12">
+                                There are many websites that offer free or inexpensive 3D design which can be downloaded for printing, including:
+                              </p>
+                              <ul>
+                                <li>Instructables</li>
+                                <li>MyMiniFactory</li>
+                                <li>Pinshape</li>
+                                <li>Thingiverse</li>
+                              </ul>
+                              <h3><a href="#3dprinter-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a>  
+                              Check your design
+                              </h3>
+                              <p class="mb-12">
+                                Most 3D design programs will create an STL file. If your file is not .STL you can convert it using a free 3D design file converter.
+                                To minimize the risk of a failed print we recommend you run your design through a file-checking program to identify and repair mistakes prior to printing. These free programs will modify and repair .STL files:
+                                </p>
+                                <ul>
+                                  <li>Gcode Analyzer</li>
+                                  <li>Meshlab</li>
+                                  <li>Meshmixer</li>
+                                  <li>Willit 3D print?</li>
+                                </ul>
+                                
+                                
+                                <h3><a href="#3dprinter-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a>  
+                                Prepare your model for 3D printing
+                                </h3>
+                                <p class="mb-12">
+                                You can save your file on the available flash memory in 3D printer and print it using the above-mentioned manual.
+                                </p>
+                                <h3><a href="#3dprinter-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                                Limitations
+                                </h3>
+                                <ul>
+                                  <li>Maximum size: 227 mm long x 148 mm wide x 150 mm high</li>
+                                  <li>Maximum print time is 2 hours</li>
+                                  <li>We will not permit use of personal filament before checking it</li>
+                                  <li>Personal jobs: limited to 100 grams per month</li>
+                                </ul>
+                                <div class="row justify-content-center">
+                                  <div class="col-md-12">
+                                      <div class="row">
+                                          <a href="../assets/images/makerspace/3dprinter/04.jpg" data-toggle="lightbox" data-gallery="3dprinter-limits" data-title="Limitations on printing" class="col-3">
+                                            <img src="../assets/images/makerspace/3dprinter/04.jpg" class="img-fluid">
+                                         </a>
+                                      </div>
+                                      <br>
+                                  </div>
+                               </div>
+
+                            <div id="soldering-section" ></div>
+                        </div>
+                  </div>
+                </div>
+            </div>
+
+          </div>
+          <!-- 3D printer End -->
+
+
+           <!-- Soldering Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Soldering tools
+                          </h2>
+                          <br>
+                          
+                            <div class="row">
+                              <a href="../assets/images/makerspace/soldering/01.jpg" data-toggle="lightbox" data-gallery="soldering-station" data-title="" class="col-3">
+                                <img src="../assets/images/makerspace/soldering/01.jpg" class="img-fluid">
+                              </a>
+                              <a href="../assets/images/makerspace/soldering/02.jpg" data-toggle="lightbox" data-gallery="soldering-station" data-title="" class="col-3">
+                                <img src="../assets/images/makerspace/soldering/02.jpg" class="img-fluid">
+                              </a>
+                              <a href="../assets/images/makerspace/soldering/03.jpg" data-toggle="lightbox" data-gallery="soldering-station" data-title="" class="col-3">
+                                <img src="../assets/images/makerspace/soldering/03.jpg" class="img-fluid">
+                              </a>
+                            <a href="https://youtu.be/thzMKXS_zms" data-toggle="lightbox" data-gallery="soldering-station" lass="col-3">
+                              <img src="../assets/images/icons/youtube.png" class="rounded-circle img-fluid">
+                            </a>
+                           </div>
+                           <br/>
+
+                          <h3><a href="#soldering-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Station 1 - HAKKO FX-888D
+                          </h3>
+                          <ul>
+                            <li><a href="https://www.hakko.com/english/products/hakko_fx888d.html" target="_blank">HAKKO FX-888D</a></li>
+                            <li><a href="../assets/manuals/HAKKO%20FX-888D.pdf">Manual</a></li>
+                          </ul> 
+
+
+                          <h3><a href="#soldering-section"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            Station 2 - Weller WES50
+                          </h3>
+                          <ul>
+                            <li><a href="https://www.industrialelectronics.biz/weller/weller_wes50.htm" target="_blank">Weller WES50</a></li>
+                            <li><a href="../assets/manuals/Weller_solderingstationWES50.pdf">Manual</a></li>
+                          </ul> 
+
+                      
+                        </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <!-- Soldering End -->
+
+           <!-- dril Start -->
+           <div class="mr-md mr-xl">
+            <div  class="row">
+                <div class="col-md-12 grid-margin stretch-card">
+                    <div class="card">
+                        <div class="card-body">
+                          <h2>
+                            <a href="#top"><i class="mdi mdi mdi-arrow-up-bold-circle-outline text-muted"></i></a> 
+                            <a id="drill-section" class="anchor"></a>
+                            Drilling Tools 
+                            <a href="https://youtu.be/tCcuebKLmXk" data-toggle="lightbox">
+                              <i class="fa-brands fa-youtube" style="color:red"></i>
+                            </a> 
+                            
+                          </h2> 
+                        </div>
+
+                        <!--photos start-->
+                        <div  class="row">
+                          <div class="col-6 col-md-4">
+                              <figure class="figure profile">
+                                <a href="../assets/images/makerspace/drill/01.jpg" data-toggle="lightbox">
+                                  <img src="../assets/images/makerspace/drill/01.jpg" class="figure-img img-fluid" alt="">
+                                </a>
+                                  <figcaption class="figure-caption" >
+                                    <a href="../assets/manuals/Dremel%20WorkStation%20220%20-%20manual.pdf">
+                                      <i class="fa-solid fa-file-arrow-down"></i>
+                                      220-01 WorkStation™
+                                    </a>  
+                                  </figcaption>
+                                </figure>
+                          </div>
+                          <!--/photos end-->
+
+                        </div>
+
+                  </div>
+                                   
+                </div>
+               
+            </div>
+          </div>
+          <!-- drill End -->
+
+        </div>
+        <!-- content-wrapper ends -->
+
+        <!-- partial:partials/_footer.html -->
+        <footer class="footer">
+          <div class="d-sm-flex justify-content-center justify-content-sm-between">
+            <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Since 2019</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Donated to <a href="http://neill-wycik.coop/">Neill-Wycik</a> with<i class="mdi mdi-heart text-danger"></i> by<br/> <a href="https://sinamedialab.com">Sina Media Lab Inc.</a>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+
+  <!-- plugins:js -->
+  <script src="../assets/vendors/base/vendor.bundle.base.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <script src="../assets/vendors/chart.js/Chart.min.js"></script>
+  <script src="../assets/vendors/datatables.net/jquery.dataTables.js"></script>
+  <script src="../assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../assets/js/off-canvas.js"></script>
+  <script src="../assets/js/hoverable-collapse.js"></script>
+  <script src="../assets/js/template.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../assets/js/dashboard.js"></script>
+  <script src="../assets/js/data-table.js"></script>
+  <script src="../assets/js/jquery.dataTables.js"></script>
+  <script src="../assets/js/dataTables.bootstrap4.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+  <script>
+  $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+    event.preventDefault();
+    $(this).ekkoLightbox({wrapping: false});
+  });
+  </script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
+
