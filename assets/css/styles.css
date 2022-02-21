@@ -158,3 +158,16 @@ body {
     text-align: justify;
 
   }
+
+
+
+  @media (max-width: 767px) {
+    .content-card{
+      height: auto;
+      overflow: auto;
+    }
+    .front-card{
+      height: 200px;
+      overflow: auto;
+    }
+  }
