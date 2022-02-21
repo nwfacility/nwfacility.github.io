@@ -136,3 +136,21 @@ html {
   .content-title{
     font-size: 20px;
   }
+
+  .d-flex > h3 {
+  
+    font-size: 15px;
+    margin-top: 15px;
+    font-weight: bold;
+  }
+  .d-flex > h2 {
+    font-size: 17px;
+    margin-top: 0px;
+    margin-bottom: 12px;
+  }
+
+  .d-flex > p, ul{
+    color: rgb(100, 100, 100);
+    text-align: justify;
+
+  }
