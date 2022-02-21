@@ -134,11 +134,11 @@
                             <div class="d-flex flex-column ml-2">
                                 <a id="managers" href="#" class="anchor"></a>
                                 <span ><i class="fa-solid fa-user"></i> Managers</span>
-                                 
-                                <span class="text-black-50 text-small">
-                                    <!--subtitle-->
+                                <!--text-->
+                                <p class="text-medium">
                                     Facility managers and assistants
-                                </span>
+                                </p>
+                                <!--/text-->
                             </div>
                         </div>
                         <!--/title-->
@@ -196,10 +196,11 @@
                             <div class="d-flex flex-column ml-2">
                                 <a id="rules" href="#" class="anchor"></a>
                                 <span id="rules"><i class="fa-solid fa-circle-exclamation"></i> Rules</span>
-                                <span class="text-black-50 text-small">
-                                    <!--subtitle-->
-                                    This are some base rules
-                                </span>
+                                <!--text-->
+                                <p class="text-medium">
+                                    These are some basic rules for accessing the facility. Please click on each item for more information.
+                                </p>
+                                <!--/text-->
                             </div>
                         </div>
                         <!--/title-->
@@ -232,7 +233,7 @@
                                     </figcaption>
                                 </figure>
                                 </div>
-                                
+
                                 <div class="col-6 col-md-6 col-lg-3">
                                     <figure class="figure profile">
                                         <img src="../assets/images/icons/registration.png" class="figure-img img-fluid " alt="No Guests">
@@ -310,6 +311,13 @@
      });
 </script>
     <!--/Clickable box-->
+    <!--/Tooltip-->
+    <script>
+        $(function () {
+                $('[data-toggle="tooltip"]').tooltip()
+            })
+    </script>
+    <!--Tooltip-->
     
   </body>
 </html>

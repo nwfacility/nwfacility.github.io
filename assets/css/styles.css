@@ -121,3 +121,10 @@ html {
   .profile > img {
     margin-bottom: 2px;
   }
+
+  .text-medium{
+    margin-top:5px;
+    margin-bottom: 0px;
+    font-size:15px;
+    color: rgb(100, 100, 100);
+  }
