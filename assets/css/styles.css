@@ -167,7 +167,8 @@ body {
       overflow: auto;
     }
     .front-card{
-      height: 185px;
+      height: 170px;
       overflow: auto;
+      margin-top: 10px;
     }
   }
