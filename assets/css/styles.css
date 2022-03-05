@@ -170,5 +170,7 @@ body {
       height: 170px;
       overflow: auto;
       margin-top: 10px;
+      overflow-y: hidden;
+      overflow-x: hidden;
     }
   }
