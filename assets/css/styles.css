@@ -174,3 +174,19 @@ body {
       overflow-x: hidden;
     }
   }
+
+  @media (min-width: 576px) { 
+    .content-card{
+      height: auto;
+      overflow: auto;
+    }
+    .front-card{
+      height: 190px;
+      overflow: auto;
+      margin-top: 10px;
+      overflow-y: hidden;
+      overflow-x: hidden;
+    }
+
+
+   }
