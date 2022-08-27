@@ -173,6 +173,12 @@ body {
       overflow-y: hidden;
       overflow-x: hidden;
     }
+    .ml-2{
+      font-size: 14px;
+    }
+    .text-small {
+      font-size: 8px;
+    }
   }
 
   @media (min-width: 576px) { 
